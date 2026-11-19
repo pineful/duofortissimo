@@ -1,7 +1,7 @@
 export default {
   code: 'zh-CN',
   htmlLang: 'zh-Hans',
-  label: '简 简体中文',
+  label: '简体中文',
   name: '简体中文',
 
   meta: {

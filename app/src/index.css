@@ -1588,7 +1588,6 @@ blockquote {
   line-height: 1.4;
   padding: 7px 15px 7px 0;
   cursor: pointer;
-  text-transform: uppercase;
   transition: color 0.3s;
 }
 .lang-switch select:hover {
@@ -1609,7 +1608,6 @@ blockquote {
 .lang-switch select option {
   font-family: var(--sans);
   letter-spacing: 0.02em;
-  text-transform: none;
   color: var(--ink);
   background: var(--paper);
 }

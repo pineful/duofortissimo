@@ -1,7 +1,7 @@
 export default {
   code: 'ja',
   htmlLang: 'ja',
-  label: 'JA 日本語',
+  label: '日本語',
   name: '日本語',
 
   meta: {

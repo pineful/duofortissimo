@@ -1,7 +1,7 @@
 export default {
   code: 'ru',
   htmlLang: 'ru',
-  label: 'RU Русский',
+  label: 'Русский',
   name: 'Русский',
 
   meta: {

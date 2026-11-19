@@ -3,7 +3,7 @@
 export default {
   code: 'ko',
   htmlLang: 'ko',
-  label: 'KO 한국어',
+  label: '한국어',
   name: '한국어',
 
   meta: {

@@ -1,7 +1,7 @@
 export default {
   code: 'it',
   htmlLang: 'it',
-  label: 'IT Italiano',
+  label: 'Italiano',
   name: 'Italiano',
 
   meta: {
