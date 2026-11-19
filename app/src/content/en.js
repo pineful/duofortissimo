@@ -34,8 +34,8 @@ export default {
     byline: 'Duo Fortissimo / Autumn 2026',
     plateLabel: 'Cover plate',
     plateCaption:
-      'Mungyeong, 2 September 2026. Park Minsoon and Lee Chulkyu in front of the concert banner, before going on.',
-    alt: 'Park Minsoon on mandolin and Lee Chulkyu on classical guitar, standing together before the RE;BASIN concert banner',
+      'The official portrait. Lee Chulkyu with the classical guitar on the left, Park Minsoon with the mandolin on the right.',
+    alt: 'Official portrait of Duo Fortissimo: Lee Chulkyu with his classical guitar and Park Minsoon with his mandolin',
     contentsLabel: 'In this issue',
     contents: [
       { no: '01', name: 'The Duet', sub: 'The duo and its two players' },
@@ -72,8 +72,13 @@ export default {
         nameEn: '박민순',
         role: 'Mandolin',
         roleLabel: 'Mandolin',
+        photoCaption: '2 September 2026, at the concert ground in Mungyeong',
+        photoAlt: 'Park Minsoon with his mandolin at the Mungyeong concert ground',
         facts: [
-          ['1994–', 'Principal, Soongsil University Mandolin Orchestra Alumni Ensemble'],
+          ['1990–1994', 'First mandolin and librarian, Soongsil University Mandolin Orchestra'],
+          ['1994–', 'Concertmaster, Soongsil University Mandolin Orchestra Alumni Ensemble'],
+          ['Conducting', 'Guest conductor and coach, Bundang Mandolin Orchestra'],
+          ['2008 · 2011', 'Two mandolin recitals (Seongnam Arts Center, Baekseok Art Hall)'],
           ['2009–', 'Director, Animato Mandolin Ensemble'],
           ['2009–2011', 'M.A. in Instrumental Music (mandolin), Graduate School of Music, Baekseok University'],
           ['Plays', 'Mandolin, mandocello, classical guitar'],
@@ -85,6 +90,8 @@ export default {
         nameEn: '이철규',
         role: 'Classical Guitar',
         roleLabel: 'Classical guitar',
+        photoCaption: 'Lee Chulkyu playing on stage',
+        photoAlt: 'Lee Chulkyu playing the classical guitar on stage',
         facts: [['Affiliation', 'Guitar section leader, Soongsil University Mandolin Orchestra Alumni Ensemble']],
         note: 'His education and performing career will follow shortly.',
       },
@@ -154,9 +161,9 @@ export default {
         alt: 'An empty stage with the lights in place',
       },
       {
-        caption: 'Behind the stage, Park Minsoon in a gap in the wall',
+        caption: 'Behind the stage, Lee Chulkyu in a gap in the wall',
         meta: '2026.09.02 · Mungyeong',
-        alt: 'Park Minsoon standing in the gap of a broken wall behind the concert ground',
+        alt: 'Lee Chulkyu standing in the gap of a broken wall behind the concert ground',
       },
     ],
     stages: [

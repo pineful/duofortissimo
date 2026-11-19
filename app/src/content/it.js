@@ -34,8 +34,8 @@ export default {
     byline: 'Duo Fortissimo / Autunno 2026',
     plateLabel: 'Tavola di copertina',
     plateCaption:
-      'Mungyeong, 2 settembre 2026. Park Minsoon e Lee Chulkyu davanti al banner del concerto, poco prima di salire sul palco.',
-    alt: 'Park Minsoon al mandolino e Lee Chulkyu alla chitarra classica, uno accanto all’altro davanti al banner del concerto RE;BASIN',
+      'Il ritratto ufficiale. A sinistra Lee Chulkyu con la chitarra classica, a destra Park Minsoon con il mandolino.',
+    alt: 'Ritratto ufficiale del Duo Fortissimo: Lee Chulkyu con la chitarra classica e Park Minsoon con il mandolino',
     contentsLabel: 'In questo numero',
     contents: [
       { no: '01', name: 'The Duet', sub: 'Il duo e i due interpreti' },
@@ -72,8 +72,13 @@ export default {
         nameEn: '박민순',
         role: 'Mandolino',
         roleLabel: 'Mandolino',
+        photoCaption: '2 settembre 2026, allo spiazzo del concerto di Mungyeong',
+        photoAlt: 'Park Minsoon con il mandolino allo spiazzo del concerto di Mungyeong',
         facts: [
-          ['1994–', 'Primo mandolino dell’Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil'],
+          ['1990–1994', 'Primo mandolino e responsabile della biblioteca dell’Orchestra di Mandolini dell’Università Soongsil'],
+          ['1994–', 'Spalla dell’Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil'],
+          ['Direzione', 'Direttore ospite della Bundang Mandolin Orchestra'],
+          ['2008 · 2011', 'Due recital per mandolino (Seongnam Arts Center, Baekseok Art Hall)'],
           ['2009–', 'Direttore dell’Animato Mandolin Ensemble'],
           ['2009–2011', 'Laurea magistrale in Musica strumentale (mandolino), Scuola di Musica dell’Università Baekseok'],
           ['Strumenti', 'Mandolino, mandoloncello, chitarra classica'],
@@ -85,6 +90,8 @@ export default {
         nameEn: '이철규',
         role: 'Chitarra classica',
         roleLabel: 'Chitarra classica',
+        photoCaption: 'Lee Chulkyu che suona sul palco',
+        photoAlt: 'Lee Chulkyu alla chitarra classica sul palco',
         facts: [
           ['Affiliazione', 'Capo sezione chitarre dell’Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil'],
         ],
@@ -156,9 +163,9 @@ export default {
         alt: 'Un palco vuoto con le luci già sistemate',
       },
       {
-        caption: 'Dietro il palco, Park Minsoon in una fessura nel muro',
+        caption: 'Dietro il palco, Lee Chulkyu in una fessura nel muro',
         meta: '02.09.2026 · Mungyeong',
-        alt: 'Park Minsoon nella fessura di un muro crollato, dietro lo spiazzo del concerto',
+        alt: 'Lee Chulkyu nella fessura di un muro crollato, dietro lo spiazzo del concerto',
       },
     ],
     stages: [

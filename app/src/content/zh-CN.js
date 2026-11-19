@@ -34,8 +34,8 @@ export default {
     byline: 'Duo Fortissimo / 2026 年秋',
     plateLabel: '封面图版',
     plateCaption:
-      '2026 年 9 月 2 日，庆尚北道闻庆的 Ssangyong 水泥厂。演出前，在舞台横幅前并肩而立的 Park Minsoon 与 Lee Chulkyu。',
-    alt: '站在“再生之旋律 RE;BASIN”舞台横幅前的曼陀铃演奏者 Park Minsoon 与古典吉他演奏者 Lee Chulkyu',
+      '官方肖像。左侧为古典吉他 Lee Chulkyu，右侧为曼陀铃 Park Minsoon。',
+    alt: 'Duo Fortissimo 官方肖像：手持古典吉他的 Lee Chulkyu 与手持曼陀铃的 Park Minsoon 并肩而立',
     contentsLabel: '本期目录',
     contents: [
       { no: '01', name: 'The Duet', sub: '二重奏与两位演奏家' },
@@ -72,8 +72,13 @@ export default {
         nameEn: '박민순',
         role: '曼陀铃',
         roleLabel: '曼陀铃',
+        photoCaption: '2026 年 9 月 2 日，闻庆演出场地',
+        photoAlt: '手持曼陀铃的 Park Minsoon，闻庆演出场地',
         facts: [
+          ['1990—1994 年', '崇实大学曼陀铃管弦乐团 第一曼陀铃、图书部长'],
           ['1994 年至今', '崇实大学曼陀铃管弦乐团校友演奏团 首席'],
+          ['指挥', '盆唐曼陀铃管弦乐团 客座指挥与指导'],
+          ['2008 · 2011 年', '曼陀铃独奏会 2 场（城南艺术中心、白石艺术厅）'],
           ['2009 年至今', 'Animato 曼陀铃乐团 团长'],
           ['2009—2011 年', '白石大学 音乐研究生院 器乐科（曼陀铃）硕士'],
           ['演奏', '曼陀铃、曼陀铃大提琴、古典吉他'],
@@ -85,6 +90,8 @@ export default {
         nameEn: '이철규',
         role: '古典吉他',
         roleLabel: '古典吉他',
+        photoCaption: '在舞台上演奏古典吉他的 Lee Chulkyu',
+        photoAlt: '在舞台上演奏古典吉他的 Lee Chulkyu',
         facts: [['所属', '崇实大学曼陀铃管弦乐团校友演奏团 吉他声部长']],
         note: '学历与演奏经历整理后即将刊登。',
       },
@@ -152,9 +159,9 @@ export default {
         alt: '架好灯光的空舞台',
       },
       {
-        caption: '舞台背后，站在墙上裂缝间的 Park Minsoon',
+        caption: '舞台背后，站在墙上裂缝间的 Lee Chulkyu',
         meta: '2026.09.02 · 闻庆',
-        alt: '会场后方，站在残墙裂缝间的 Park Minsoon',
+        alt: '会场后方，站在残墙裂缝间的 Lee Chulkyu',
       },
     ],
     stages: [

@@ -12,7 +12,7 @@ export const photos = {
     src: '/assets/photos/hero-1400.webp',
     srcset: '/assets/photos/hero-700.webp 700w, /assets/photos/hero-1400.webp 1400w',
     width: 1400,
-    height: 1556,
+    height: 1050,
   },
   duo: {
     src: '/assets/photos/duo-1200.webp',
@@ -30,8 +30,8 @@ export const photos = {
     {
       src: '/assets/photos/player-lee-960.webp',
       srcset: '/assets/photos/player-lee-480.webp 480w, /assets/photos/player-lee-960.webp 960w',
-      alt: '야외 버스킹에서 웃는 이철규',
-      caption: '2026년 9월 1일, 야외 버스킹에서',
+      alt: '무대에서 클래식기타를 연주하는 이철규',
+      caption: '무대에서 클래식기타를 연주하는 이철규',
     },
   ],
   gallery: [

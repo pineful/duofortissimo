@@ -75,10 +75,10 @@ export default function Duo() {
                     sizes="(max-width: 820px) 92vw, (max-width: 1000px) 44vw, 38vw"
                     width="960"
                     height="1200"
-                    alt={photo.alt}
+                    alt={m.photoAlt || photo.alt}
                     loading="lazy"
                   />
-                  <figcaption>{photo.caption}</figcaption>
+                  <figcaption>{m.photoCaption || photo.caption}</figcaption>
                 </figure>
                 <div className="profile-copy">
                   <div className="profile-head">
