@@ -1665,3 +1665,10 @@ html[data-lang="ru"] .contact-lead h2 {
     hyphens: manual;
   }
 }
+
+/* 좁은 화면에서는 표지 도판이 가로로 넓게 잘리므로, 두 사람 머리 위 여백을 남기도록 위쪽을 기준으로 맞춥니다. */
+@media (max-width: 820px) {
+  .cover-img img {
+    object-position: center 18%;
+  }
+}
