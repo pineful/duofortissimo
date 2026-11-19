@@ -1503,7 +1503,7 @@ blockquote {
     gap: 30px;
   }
   .stage-table li {
-    grid-template-columns: 82px minmax(0, 1fr);
+    grid-template-columns: 96px minmax(0, 1fr);
     gap: 14px;
     padding: 20px 0;
   }
@@ -1511,7 +1511,8 @@ blockquote {
     display: none;
   }
   .stage-table time {
-    font-size: 18px;
+    font-size: 17px;
+    white-space: nowrap;
   }
   .next-note {
     grid-template-columns: 1fr;
