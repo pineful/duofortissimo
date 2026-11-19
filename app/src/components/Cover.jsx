@@ -33,7 +33,7 @@ export default function Cover() {
           <figcaption>
             <span>표지 도판</span>
             <b>
-              2026년 9월 2일, 경북 문경 쌍용양회 공장. 무대에 오르기 전 만돌린을 고르는 박민순.
+              2026년 9월 2일, 경북 문경 쌍용양회 공장. 무대를 앞두고 만돌린을 든 박민순.
             </b>
           </figcaption>
         </figure>
