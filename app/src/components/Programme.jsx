@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
-import { site, videos, repertoire } from '../data.js'
+import { site, videos } from '../media.js'
+import { useI18n } from '../i18n.jsx'
 import { Reveal, PlayIcon, ArrowIcon } from './shared.jsx'
 
 function Programme() {
+  const { c } = useI18n()
+  const p = c.programme
   const [index, setIndex] = useState(0)
   const [playing, setPlaying] = useState(false)
   const active = videos[index]
+  const copy = p.videos[index]
   useEffect(() => setPlaying(false), [index])
 
   return (
@@ -15,7 +19,7 @@ function Programme() {
           {playing ? (
             <iframe
               src={`https://www.youtube-nocookie.com/embed/${active.id}?autoplay=1&rel=0&modestbranding=1`}
-              title={`${active.title} ${active.titleKo}`}
+              title={`${copy.title} ${copy.sub}`.trim()}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; compute-pressure"
               allowFullScreen
             />
@@ -24,47 +28,52 @@ function Programme() {
               type="button"
               className="plate-btn"
               onClick={() => setPlaying(true)}
-              aria-label={`${active.title} 영상 재생`}
+              aria-label={`${copy.title} — ${c.ui.play}`}
             >
               <img src={active.thumb} alt="" />
               <span className="plate-numeral">{active.no}</span>
               <span className="plate-play">
                 <PlayIcon />
-                재생
+                {c.ui.play}
               </span>
             </button>
           )}
         </div>
         <p className="plate-caption">
-          <span>도판 {active.no}</span>
-          {active.meta} {active.place}
+          <span>
+            {c.ui.plate} {active.no}
+          </span>
+          {active.date} {copy.place}
         </p>
       </div>
 
-      <div className="programme-list" role="tablist" aria-label="연주 영상 목록">
-        <p className="list-head">Programme</p>
-        {videos.map((v, i) => (
-          <button
-            key={v.id}
-            type="button"
-            role="tab"
-            aria-selected={i === index}
-            className={`prog-item ${i === index ? 'is-on' : ''}`}
-            onClick={() => setIndex(i)}
-          >
-            <span className="prog-no">{v.no}</span>
-            <span className="prog-copy">
-              <b>{v.title}</b>
-              <em>{v.titleKo}</em>
-              <span className="prog-meta">
-                {v.composer ? `${v.composer} · ` : ''}
-                {v.length}
+      <div className="programme-list" role="tablist" aria-label={c.ui.videoListLabel}>
+        <p className="list-head">{p.listHead}</p>
+        {videos.map((v, i) => {
+          const item = p.videos[i]
+          return (
+            <button
+              key={v.id}
+              type="button"
+              role="tab"
+              aria-selected={i === index}
+              className={`prog-item ${i === index ? 'is-on' : ''}`}
+              onClick={() => setIndex(i)}
+            >
+              <span className="prog-no">{v.no}</span>
+              <span className="prog-copy">
+                <b>{item.title}</b>
+                {item.sub ? <em>{item.sub}</em> : null}
+                <span className="prog-meta">
+                  {item.composer ? `${item.composer} · ` : ''}
+                  {item.length}
+                </span>
               </span>
-            </span>
-          </button>
-        ))}
+            </button>
+          )
+        })}
         <a className="text-link" href={site.youtube} target="_blank" rel="noopener noreferrer">
-          유튜브 채널에서 더 보기
+          {c.ui.moreVideos}
           <ArrowIcon />
         </a>
       </div>
@@ -73,19 +82,20 @@ function Programme() {
 }
 
 export default function ProgrammeSection() {
+  const { c } = useI18n()
+  const p = c.programme
+
   return (
     <section className="spread spread--programme" id="programme">
       <div className="shell">
         <header className="spread-head spread-head--row">
           <p className="folio">
             <span>02</span>
-            Programme
+            {p.folio}
           </p>
           <div>
-            <h2>무대에서 남긴 세 편의 연주</h2>
-            <p className="standfirst standfirst--small">
-              2026년 10월 10일 기타발표회와 9월 리허설 실황입니다. 목록에서 곡을 고르면 이 자리에서 재생됩니다.
-            </p>
+            <h2>{p.title}</h2>
+            <p className="standfirst standfirst--small">{p.standfirst}</p>
           </div>
         </header>
 
@@ -94,25 +104,23 @@ export default function ProgrammeSection() {
         </Reveal>
 
         <div className="rep-table">
-          <p className="rep-title">주요 연주곡</p>
+          <p className="rep-title">{p.repTitle}</p>
           <div className="rep-head-row">
-            <span>작곡</span>
-            <span>곡</span>
-            <span>편성</span>
+            {p.repHead.map((h) => (
+              <span key={h}>{h}</span>
+            ))}
           </div>
-          {repertoire.map((r) => (
-            <div className="rep-line" key={r.title}>
-              <span>{r.composer}</span>
+          {p.rep.map(([composer, title, sub, inst]) => (
+            <div className="rep-line" key={title}>
+              <span>{composer}</span>
               <span>
-                {r.title}
-                <em>{r.titleKo}</em>
+                {title}
+                {sub ? <em>{sub}</em> : null}
               </span>
-              <span>{r.inst}</span>
+              <span>{inst}</span>
             </div>
           ))}
-          <p className="rep-foot">
-            두 곡은 9월 2일 문경 쌍용양회 공장 콘서트에서도 연주했습니다. 연주곡은 계속 늘려 가고 있습니다.
-          </p>
+          <p className="rep-foot">{p.repFoot}</p>
         </div>
       </div>
     </section>

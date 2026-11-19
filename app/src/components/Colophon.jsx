@@ -1,14 +1,17 @@
-import { site } from '../data.js'
+import { site } from '../media.js'
+import { useI18n } from '../i18n.jsx'
 
 export default function Colophon() {
+  const { c } = useI18n()
+
   return (
     <footer className="colophon">
       <div className="shell colophon-inner">
         <div className="colophon-brand">
-          <img src="/assets/logo-lockup.png" alt="Duo Fortissimo 듀오 포르티시모" width="459" height="676" loading="lazy" />
+          <img src="/assets/logo-lockup.png" alt="Duo Fortissimo" width="459" height="676" loading="lazy" />
           <div>
-            <b>만돌린 박민순 · 클래식기타 이철규</b>
-            <p>활자 Playfair Display, Noto Serif KR, Pretendard</p>
+            <b>{c.colophon.members}</b>
+            <p>{c.colophon.typeNote}</p>
           </div>
         </div>
         <div className="colophon-links">

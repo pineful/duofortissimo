@@ -1,9 +1,13 @@
 import { useState } from 'react'
-import { site, mailto } from '../data.js'
+import { site } from '../media.js'
+import { useI18n } from '../i18n.jsx'
 import { copyText, ArrowIcon, CopyIcon } from './shared.jsx'
 
 export default function Contact() {
+  const { c } = useI18n()
+  const k = c.contact
   const [copied, setCopied] = useState(false)
+  const mailto = `mailto:${site.email}?subject=${encodeURIComponent(k.mailSubject)}`
 
   const onCopy = async () => {
     const ok = await copyText(site.email)
@@ -19,35 +23,32 @@ export default function Contact() {
         <div className="contact-lead">
           <p className="folio">
             <span>04</span>
-            Contact
+            {k.folio}
           </p>
           <h2>
-            공연과 섭외,
+            {k.title[0]}
             <br />
-            <em>이 메일로</em> 시작합니다
+            <em>{k.title[1]}</em>
+            {k.title[2]}
           </h2>
         </div>
         <div className="reply-card">
-          <p className="reply-label">To. Duo Fortissimo</p>
-          <p className="reply-body">
-            연주회, 기업 행사, 예식, 소규모 모임까지 자리와 규모에 맞춰 상의합니다. 일시와 장소, 연주 시간을 알려
-            주시면 가능한 프로그램을 함께 정리해 드립니다. 악기와 음향 장비는 현장에 맞춰 준비하고, 야외 무대도
-            상의해 주세요.
-          </p>
+          <p className="reply-label">{k.label}</p>
+          <p className="reply-body">{k.body}</p>
           <a className="reply-mail" href={mailto}>
             {site.email}
           </a>
           <div className="reply-actions">
             <a className="ink-btn" href={mailto}>
-              메일 보내기
+              {k.mail}
               <ArrowIcon />
             </a>
             <button type="button" className="line-btn" onClick={onCopy}>
               <CopyIcon />
-              {copied ? '주소를 복사했습니다' : '주소 복사'}
+              {copied ? k.copied : k.copyAddr}
             </button>
           </div>
-          <p className="reply-hint">행사 일시와 장소, 연주 시간, 원하시는 분위기를 함께 적어 주세요.</p>
+          <p className="reply-hint">{k.hint}</p>
         </div>
       </div>
     </section>

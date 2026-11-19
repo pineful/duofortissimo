@@ -7,9 +7,11 @@ import Stage from './components/Stage.jsx'
 import Contact from './components/Contact.jsx'
 import Colophon from './components/Colophon.jsx'
 import { useScrollValue } from './components/shared.jsx'
+import { I18nProvider, useI18n } from './i18n.jsx'
 
-export default function App() {
+function Page() {
   const { y } = useScrollValue()
+  const { c } = useI18n()
   const progress = useRef(null)
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export default function App() {
       <span className="read-progress" ref={progress} aria-hidden="true" />
       <Masthead y={y} />
       <a className="skip" href="#main">
-        본문으로 건너뛰기
+        {c.ui.skip}
       </a>
 
       <main id="main">
@@ -52,5 +54,13 @@ export default function App() {
 
       <Colophon />
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <I18nProvider>
+      <Page />
+    </I18nProvider>
   )
 }

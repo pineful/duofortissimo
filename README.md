@@ -19,6 +19,24 @@ React + Vite로 만들었고, 빌드 결과를 GitHub Pages로 배포합니다.
 | 라틴 활자 | Playfair Display (로고 워드마크와 같은 서체) |
 | 한글 활자 | Noto Serif KR, Pretendard |
 
+## 언어
+
+일곱 개 언어를 한 페이지에서 전환합니다. 주소에 `?lang=ja`처럼 붙여도 그 언어로 열립니다.
+
+| 코드 | 언어 | `html lang` | 본문 활자 |
+| --- | --- | --- | --- |
+| `ko` | 한국어 (기본) | `ko` | Noto Serif KR |
+| `en` | English | `en` | Noto Serif KR (라틴) |
+| `it` | Italiano | `it` | Noto Serif KR (라틴) |
+| `ja` | 日本語 | `ja` | Noto Serif JP |
+| `zh-CN` | 简体中文 | `zh-Hans` | Noto Serif SC |
+| `zh-TW` | 繁體中文 | `zh-Hant` | Noto Serif TC |
+| `ru` | Русский | `ru` | Noto Serif (키릴) |
+
+- 처음 방문하면 `localStorage`의 선택 → 브라우저 언어 → 한국어 순으로 고릅니다.
+- 전환기는 마스트헤드 오른쪽 끝의 작은 선택 상자이고, 고른 언어는 `duo-lang`에 남습니다.
+- 언어를 바꾸면 `html lang`, 문서 제목, 설명 메타 태그도 함께 바뀝니다.
+
 ## 구조
 
 저장소 루트는 **배포되는 사이트**이고, 소스는 `app/` 안에 있습니다.
@@ -32,15 +50,20 @@ CNAME  robots.txt  sitemap.xml  favicon-32.png  favicon-64.png  apple-touch-icon
 .nojekyll
 docs/               같은 빌드 결과의 사본
 app/
-  index.html        개발용 진입 파일 (메타 정보, OG 태그, 구조화 데이터)
+  index.html        개발용 진입 파일 (메타 정보, OG 태그, 구조화 데이터, 폰트)
   vite.config.js    빌드 설정 (outDir: ../docs)
   src/
     main.jsx        React 진입점
-    App.jsx         섹션 조합, 읽기 진행 막대
-    data.js         콘텐츠 정본: 구성원·사진, 영상, 레퍼토리, 지난 무대, 무대 사진
-    index.css       전체 디자인(색, 서체, 레이아웃, 모션)
+    App.jsx         섹션 조합, 읽기 진행 막대, 언어 공급자
+    i18n.jsx        언어 상태·전환 훅 (I18nProvider, useI18n)
+    media.js        언어와 무관한 자산: 사진 경로, 영상 ID·썸네일, 연락처, 공연 날짜
+    content/
+      index.js      언어 목록, 언어 감지, ?lang= 처리
+      ko.js         한국어 정본 (다른 언어는 이 구조를 그대로 따릅니다)
+      en.js  it.js  ja.js  zh-CN.js  zh-TW.js  ru.js
+    index.css       전체 디자인(색, 서체, 레이아웃, 모션, 언어별 조판)
     components/
-      Masthead.jsx    상단 로고와 메뉴
+      Masthead.jsx    상단 로고, 메뉴, 언어 전환기
       Cover.jsx       표지(첫 화면), 표지 도판, 차례
       Duo.jsx         듀오 소개, 사실 확인, 두 연주자 프로필
       Programme.jsx   연주 영상과 연주곡
@@ -63,28 +86,41 @@ scripts/
 
 ## 콘텐츠 고치기
 
-글과 목록은 `app/src/data.js`에서 고칩니다. 영상은 유튜브 영상 ID만 넣으면 미리보기와 임베드가 함께 만들어집니다.
+글은 언어별로 `app/src/content/<언어>.js`에 있고, 사진·영상 ID는 `app/src/media.js`에 있습니다.
+한국어(`ko.js`)의 키 구조를 그대로 복사해 다른 언어 파일을 채우면 됩니다.
 
 ```js
-export const videos = [
-  { id: '유튜브영상ID', no: 'I', title: '곡명', titleKo: '한글 곡명', composer: '작곡', meta: '2026.10.10', place: '공연 이름', length: '6분 27초', thumb: '/assets/yt-....jpg' },
-]
+// content/ko.js 의 programme.videos 항목
+{ title: 'Valtzer Fantastico', sub: '환상적인 왈츠', composer: 'E. Marucelli', length: '6분 27초', place: '숭실대학교 …' }
+
+// media.js 의 videos 항목 (순서가 같아야 합니다)
+{ id: '유튜브영상ID', no: 'I', thumb: '/assets/yt-....jpg', date: '2026.10.10' }
 ```
 
-- `members[].photo`: 연주자 프로필 사진 경로와 캡션
-- `gallery`: 무대 사진(경로, 캡션, `pos`는 `object-position`)
-- `stages`: 새 공연이 잡히면 배열 맨 위에 한 줄 추가하고, `Stage.jsx`의 "다음 무대" 문구도 함께 고칩니다.
+- `media.photos.members[]`: 연주자 프로필 사진 경로
+- `media.photos.gallery[]`: 무대 사진 경로와 `pos`(`object-position`). 캡션과 대체 텍스트는 `content/*.js`의 `stage.gallery`에 있습니다.
+- `content/*.js`의 `stage.stages`: 새 공연이 잡히면 배열 맨 위에 한 줄을 넣고, `media.js`의 `stageDates` 순서도 함께 맞춥니다. "다음 무대" 문구는 `stage.next`에 있습니다.
+- 언어를 하나 더 넣으려면 `content/`에 파일을 만들고 `content/index.js`의 `LOCALES`에 넣습니다. `index.css`의 언어별 활자 규칙도 함께 손봅니다.
 
 ### 아직 비어 있는 자리
 
-- `app/src/data.js`의 이철규 님 `facts`: 학력과 연주 경력. 지금은 소속 한 줄과 "곧 올립니다" 안내만 있습니다.
+- 이철규 님의 학력과 연주 경력. 지금은 소속 한 줄과 "곧 올립니다" 안내만 있습니다.
 
 ## 이미지
 
 `app/public/assets/photos/`의 사진은 2026년 9월 2일 경북 문경 쌍용양회 공장에서 열린
 「재생의 선율 RE;BASIN」 클래식 콘서트와, 9월 1일 야외 버스킹에서 찍은 것입니다.
-원본은 구글 드라이브 `듀오 포르티시모` 폴더에 있습니다. 사진을 바꿀 때는 같은 비율(4:5, 4:3)로 잘라
-WebP로 저장하고 파일 이름을 유지하면 됩니다.
+
+| 파일 | 내용 |
+| --- | --- |
+| `hero-*.webp` | 표지 도판. 공연 전, 무대 배너 앞에 나란히 선 두 사람 (2026.09.02 18:54) |
+| `duo-*.webp` | 듀오 소개 도판. 무대에서 함께 연주하는 두 사람 (2026.09.02) |
+| `player-*.webp` | 연주자 프로필 |
+| `stage-*.webp` | 무대 사진 네 장 |
+
+원본은 구글 드라이브 `듀오 포르티시모` 폴더에 있습니다. 사진을 바꿀 때는 같은 비율로 잘라
+WebP로 저장하고 파일 이름을 유지하면 됩니다. 표지와 공유 미리보기(`og-image.jpg`)는
+두 사람이 함께 나온 사진을 씁니다.
 
 ## 로컬에서 보기
 
