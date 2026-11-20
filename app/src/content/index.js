@@ -1,13 +1,14 @@
 import ko from './ko.js'
 import en from './en.js'
 import it from './it.js'
+import de from './de.js'
 import ja from './ja.js'
 import zhCN from './zh-CN.js'
 import zhTW from './zh-TW.js'
 import ru from './ru.js'
 
 // 화면에 보이는 순서. label은 언어 전환 목록에 그대로 나옵니다.
-export const LOCALES = [ko, en, it, ja, zhCN, zhTW, ru]
+export const LOCALES = [ko, en, it, de, ja, zhCN, zhTW, ru]
 
 const BY_CODE = Object.fromEntries(LOCALES.map((l) => [l.code, l]))
 
@@ -23,6 +24,7 @@ function matchTag(tag) {
   if (t === 'ko' || t.startsWith('ko-')) return 'ko'
   if (t === 'en' || t.startsWith('en-')) return 'en'
   if (t === 'it' || t.startsWith('it-')) return 'it'
+  if (t === 'de' || t.startsWith('de-')) return 'de'
   if (t === 'ja' || t.startsWith('ja-')) return 'ja'
   if (t === 'ru' || t.startsWith('ru-')) return 'ru'
   if (t.startsWith('zh')) {

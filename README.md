@@ -21,13 +21,14 @@ React + Vite로 만들었고, 빌드 결과를 GitHub Pages로 배포합니다.
 
 ## 언어
 
-일곱 개 언어를 한 페이지에서 전환합니다. 주소에 `?lang=ja`처럼 붙여도 그 언어로 열립니다.
+여덟 개 언어를 한 페이지에서 전환합니다. 주소에 `?lang=ja`처럼 붙여도 그 언어로 열립니다.
 
 | 코드 | 언어 | `html lang` | 본문 활자 |
 | --- | --- | --- | --- |
 | `ko` | 한국어 (기본) | `ko` | Noto Serif KR |
 | `en` | English | `en` | Noto Serif KR (라틴) |
 | `it` | Italiano | `it` | Noto Serif KR (라틴) |
+| `de` | Deutsch | `de` | Noto Serif KR (라틴) |
 | `ja` | 日本語 | `ja` | Noto Serif JP |
 | `zh-CN` | 简体中文 | `zh-Hans` | Noto Serif SC |
 | `zh-TW` | 繁體中文 | `zh-Hant` | Noto Serif TC |
@@ -60,7 +61,7 @@ app/
     content/
       index.js      언어 목록, 언어 감지, ?lang= 처리
       ko.js         한국어 정본 (다른 언어는 이 구조를 그대로 따릅니다)
-      en.js  it.js  ja.js  zh-CN.js  zh-TW.js  ru.js
+      en.js  it.js  de.js  ja.js  zh-CN.js  zh-TW.js  ru.js
     index.css       전체 디자인(색, 서체, 레이아웃, 모션, 언어별 조판)
     components/
       Masthead.jsx    상단 로고, 메뉴, 언어 전환기
