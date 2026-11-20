@@ -1078,9 +1078,11 @@ blockquote {
   color: var(--ink-soft);
 }
 .upcoming-venue span {
-  margin-left: 9px;
+  display: block;
+  margin-top: 3px;
   font-family: var(--sans);
   font-size: 11.5px;
+  letter-spacing: 0.02em;
   color: var(--muted);
 }
 .upcoming-role {
