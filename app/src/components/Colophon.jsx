@@ -11,7 +11,6 @@ export default function Colophon() {
           <img src="/assets/logo-lockup.png" alt="Duo Fortissimo" width="459" height="676" loading="lazy" />
           <div>
             <b>{c.colophon.members}</b>
-            <p>{c.colophon.typeNote}</p>
           </div>
         </div>
         <div className="colophon-links">

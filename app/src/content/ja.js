@@ -253,7 +253,6 @@ export default {
   },
 
   colophon: {
-    members: 'マンドリン パク・ミンスン · クラシックギター イ・チョルギュ',
-    typeNote: '書体 Playfair Display、Noto Serif KR、Noto Serif JP、Pretendard',
+    members: 'マンドリン パク・ミンスン · クラシックギター イ・チョルギュ'
   },
 }

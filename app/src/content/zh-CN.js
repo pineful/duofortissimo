@@ -251,7 +251,6 @@ export default {
   },
 
   colophon: {
-    members: '曼陀铃 Park Minsoon · 古典吉他 Lee Chulkyu',
-    typeNote: '字体 Playfair Display、Noto Serif KR、Noto Serif SC、Pretendard',
+    members: '曼陀铃 Park Minsoon · 古典吉他 Lee Chulkyu'
   },
 }

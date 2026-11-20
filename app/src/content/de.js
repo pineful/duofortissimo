@@ -254,7 +254,6 @@ export default {
   },
 
   colophon: {
-    members: 'Park Minsoon, Mandoline · Lee Chulkyu, klassische Gitarre',
-    typeNote: 'Schriften Playfair Display, Noto Serif KR, Pretendard',
+    members: 'Park Minsoon, Mandoline · Lee Chulkyu, klassische Gitarre'
   },
 }

@@ -250,7 +250,6 @@ export default {
   },
 
   colophon: {
-    members: '만돌린 박민순 · 클래식기타 이철규',
-    typeNote: '활자 Playfair Display, Noto Serif KR, Pretendard',
+    members: '만돌린 박민순 · 클래식기타 이철규'
   },
 }

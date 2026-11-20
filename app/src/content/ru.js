@@ -253,7 +253,6 @@ export default {
   },
 
   colophon: {
-    members: 'Пак Минсун, мандолина · Ли Чхольгю, классическая гитара',
-    typeNote: 'Шрифты Playfair Display, Noto Serif KR, Noto Serif, Pretendard',
+    members: 'Пак Минсун, мандолина · Ли Чхольгю, классическая гитара'
   },
 }

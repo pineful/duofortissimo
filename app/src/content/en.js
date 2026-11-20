@@ -253,7 +253,6 @@ export default {
   },
 
   colophon: {
-    members: 'Park Minsoon, mandolin · Lee Chulkyu, classical guitar',
-    typeNote: 'Typefaces Playfair Display, Noto Serif KR, Pretendard',
+    members: 'Park Minsoon, mandolin · Lee Chulkyu, classical guitar'
   },
 }
