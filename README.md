@@ -100,7 +100,8 @@ scripts/
 
 - `media.photos.members[]`: 연주자 프로필 사진 경로
 - `media.photos.gallery[]`: 무대 사진 경로와 `pos`(`object-position`). 캡션과 대체 텍스트는 `content/*.js`의 `stage.gallery`에 있습니다.
-- `content/*.js`의 `stage.stages`: 새 공연이 잡히면 배열 맨 위에 한 줄을 넣고, `media.js`의 `stageDates` 순서도 함께 맞춥니다. "다음 무대" 문구는 `stage.next`에 있습니다.
+- `content/*.js`의 `stage.stages`: 지난 공연은 배열 맨 위에 최신순으로 넣고, `media.js`의 `stageDates` 순서도 함께 맞춥니다. 표 위의 "지난 무대" 머리글은 `stage.pastLabel`입니다.
+- `content/*.js`의 `stage.upcoming`: 예정 연주 카드입니다. `stamp`(예정 표시), `date`·`weekday`, `title`, `role`, `venue`·`place`, `note`, `link`를 채웁니다. 언어마다 날짜 표기는 `2026.12.17` 꼴로 통일하고 요일만 그 언어로 적습니다.
 - 언어를 하나 더 넣으려면 `content/`에 파일을 만들고 `content/index.js`의 `LOCALES`에 넣습니다. `index.css`의 언어별 활자 규칙도 함께 손봅니다.
 
 ### 아직 비어 있는 자리

@@ -51,7 +51,8 @@ export default function Stage() {
           </div>
         </div>
 
-        <ol className="stage-table" style={{ marginTop: 'clamp(40px, 6vw, 72px)' }}>
+        <p className="stage-label" style={{ marginTop: 'clamp(40px, 6vw, 72px)' }}>{s.pastLabel}</p>
+        <ol className="stage-table">
           {s.stages.map((item, i) => (
             <Reveal as="li" key={stageDates[i]} delay={i * 70}>
               <time>{stageDates[i]}</time>
@@ -64,13 +65,22 @@ export default function Stage() {
           ))}
         </ol>
 
-        <Reveal className="next-note" delay={120}>
-          <p className="next-stamp">{s.next.stamp}</p>
-          <div>
-            <h3>{s.next.title}</h3>
-            <p>{s.next.body}</p>
+        <Reveal className="upcoming" delay={120}>
+          <p className="upcoming-stamp">{s.upcoming.stamp}</p>
+          <div className="upcoming-body">
+            <p className="upcoming-date">
+              <time dateTime={s.upcoming.date.replace(/\./g, '-')}>{s.upcoming.date}</time>
+              <span>{s.upcoming.weekday}</span>
+            </p>
+            <h3>{s.upcoming.title}</h3>
+            <p className="upcoming-venue">
+              {s.upcoming.venue}
+              <span>{s.upcoming.place}</span>
+            </p>
+            <p className="upcoming-role">{s.upcoming.role}</p>
+            <p className="upcoming-note">{s.upcoming.note}</p>
             <a className="text-link" href={mailto}>
-              {s.next.link}
+              {s.upcoming.link}
               <ArrowIcon />
             </a>
           </div>

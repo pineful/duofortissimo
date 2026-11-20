@@ -167,6 +167,7 @@ export default {
         alt: '공연장 뒤편, 허물어진 벽의 틈에 선 이철규',
       },
     ],
+    pastLabel: '지난 무대',
     stages: [
       {
         what: '숭실대학교 만돌린오케스트라 동문연주단 기타발표회',
@@ -181,10 +182,15 @@ export default {
       },
       { what: '야외 버스킹', where: 'Valtzer Fantastico, Santa Claus March', city: '서울' },
     ],
-    next: {
-      stamp: 'Next',
-      title: '다음 무대를 준비하고 있습니다',
-      body: '공개된 연주 일정은 아직 없습니다. 새 소식은 이 페이지에 먼저 올리고, 필요하신 분께는 메일로도 알려 드립니다.',
+    upcoming: {
+      stamp: '예정',
+      date: '2026.12.17',
+      weekday: '(목)',
+      title: '대한민국 ROTC 서울북부지회 정기총회 및 제14·15대 회장 이·취임식',
+      role: '축하연주',
+      venue: '테라리움 서울',
+      place: '서울 노원구 · 하계역',
+      note: '확정된 연주 일정은 이 자리에 먼저 올리고, 필요하신 분께는 메일로도 알려 드립니다.',
       link: '소식 받아 보기',
     },
   },

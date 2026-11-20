@@ -166,6 +166,7 @@ export default {
         alt: 'Lee Chulkyu standing in the gap of a broken wall behind the concert ground',
       },
     ],
+    pastLabel: 'Past stages',
     stages: [
       {
         what: 'Soongsil mandolin alumni ensemble, guitar recital',
@@ -188,10 +189,15 @@ export default {
         city: 'Seoul',
       },
     ],
-    next: {
-      stamp: 'Next',
-      title: 'The next stage is being prepared',
-      body: 'No public date is set yet. News appears on this page first, and by email for anyone who would like it.',
+    upcoming: {
+      stamp: 'Upcoming',
+      date: '2026.12.17',
+      weekday: '(Thu)',
+      title: 'Annual meeting of the ROK ROTC Seoul Northern Branch, and the handover ceremony of its 14th and 15th presidents',
+      role: 'Congratulatory performance',
+      venue: 'Terarium Seoul',
+      place: 'Nowon-gu, Seoul · Hagye Station',
+      note: 'Confirmed dates go up here first, and we also send them by email to anyone who would like them.',
       link: 'Get the news',
     },
   },

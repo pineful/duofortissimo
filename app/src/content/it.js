@@ -168,6 +168,7 @@ export default {
         alt: 'Lee Chulkyu nella fessura di un muro crollato, dietro lo spiazzo del concerto',
       },
     ],
+    pastLabel: 'Palchi passati',
     stages: [
       {
         what: 'Recital di chitarra dell’Ensemble di mandolini Soongsil',
@@ -190,10 +191,15 @@ export default {
         city: 'Seul',
       },
     ],
-    next: {
-      stamp: 'Next',
-      title: 'Stiamo preparando il prossimo palco',
-      body: 'Non ci sono ancora date pubbliche. Le novità compaiono prima su questa pagina e, a chi le desidera, arrivano anche per e-mail.',
+    upcoming: {
+      stamp: 'In programma',
+      date: '2026.12.17',
+      weekday: '(gio)',
+      title: 'Assemblea annuale della sezione nord di Seul dell’ROTC della Repubblica di Corea e passaggio di presidenza dal 14º al 15º presidente',
+      role: 'Esibizione augurale',
+      venue: 'Terarium Seoul',
+      place: 'Nowon-gu, Seul · stazione di Hagye',
+      note: 'Le date confermate compaiono qui per prime e, a chi le desidera, arrivano anche per e-mail.',
       link: 'Ricevi le novità',
     },
   },

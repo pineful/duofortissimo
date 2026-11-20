@@ -164,6 +164,7 @@ export default {
         alt: '會場後方，站在殘牆裂縫間的 Lee Chulkyu',
       },
     ],
+    pastLabel: '過往舞台',
     stages: [
       {
         what: '崇實大學曼陀林管弦樂團校友演奏團 吉他演奏會',
@@ -186,10 +187,15 @@ export default {
         city: '首爾',
       },
     ],
-    next: {
-      stamp: 'Next',
-      title: '正在準備下一個舞台',
-      body: '公開的演出行程還沒有。新消息會先刊登在本頁，也會以電子郵件告知需要的朋友。',
+    upcoming: {
+      stamp: '預告',
+      date: '2026.12.17',
+      weekday: '（週四）',
+      title: '大韓民國ROTC首爾北部支部定期大會暨第14、15任會長就任儀式',
+      role: '祝賀演奏',
+      venue: 'Terarium Seoul',
+      place: '首爾 蘆原區 · 下溪站',
+      note: '確定的行程會先刊登在本頁，也會以電子郵件告知需要的朋友。',
       link: '訂閱消息',
     },
   },
