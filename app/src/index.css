@@ -1450,20 +1450,17 @@ blockquote {
   align-items: end;
 }
 .colophon b {
+  display: block;
   font-family: var(--display);
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.03em;
+  line-height: 1.45;
+  text-wrap: balance;
 }
-.colophon p {
-  font-family: var(--sans);
-  font-size: 10.5px;
-  color: var(--muted-2);
-  margin-top: 4px;
-}
-.colophon-type {
-  text-align: center;
-  letter-spacing: 0.04em;
+/* 두 사람 이름은 각각 한 덩어리로 두고, '·' 뒤에서만 줄이 바뀌게 합니다. */
+.colophon-member {
+  display: inline-block;
 }
 .colophon-links {
   display: flex;
@@ -1744,11 +1741,9 @@ blockquote {
 }
 .colophon-brand img {
   display: block;
+  flex: none;
   height: 132px;
   width: auto;
-}
-.colophon-brand p {
-  margin-top: 6px;
 }
 
 @media (max-width: 1000px) {
@@ -1773,8 +1768,25 @@ blockquote {
   .gallery .g-img {
     aspect-ratio: 4 / 5;
   }
+  /* 좁은 화면: 로고를 줄여 이름 자리를 넓히고, 이름은 한 줄에 들어가도록 조판합니다. */
+  .colophon-brand {
+    gap: 12px;
+  }
   .colophon-brand img {
-    height: 96px;
+    height: 80px;
+  }
+  .colophon-brand b {
+    font-size: clamp(13px, 4.15vw, 19px);
+    letter-spacing: 0.02em;
+  }
+}
+/* 320~340px 대의 좁은 화면: 한 단어만 남지 않도록 이름 자리를 조금 더 넓힙니다. */
+@media (max-width: 340px) {
+  .colophon-brand img {
+    height: 68px;
+  }
+  .colophon-brand b {
+    font-size: 12.6px;
   }
 }
 
@@ -1841,9 +1853,6 @@ blockquote {
     grid-template-columns: 1fr;
     align-items: start;
     gap: 18px;
-  }
-  .colophon-type {
-    text-align: left;
   }
   .colophon-links {
     justify-content: flex-start;
