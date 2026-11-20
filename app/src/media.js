@@ -42,10 +42,15 @@ export const photos = {
   ],
 }
 
+// 도판 III은 2026년 9월 1일 보정동 카페거리 '보카' 앞에서 한 실제 야외 버스킹 영상입니다.
+// (2026-11-20 확인 · oEmbed·채널 @MinSoonPark · 제목 '20260901 버스킹 Valtzer Fantastico' · 6분 30초)
+// 썸네일은 그 영상의 유튜브 최대 해상도(1280x720)를 받아 저장한 것입니다.
+// 이전 도판 III(6RDwFnw-o40)은 연습실에서 찍은 MOOB 2026 기타발표회 2차 리허설 영상(2026.09.12)이어서,
+// 야외 버스킹으로 잘못 소개되고 있어 바로잡았습니다.
 export const videos = [
   { id: 'slL9iu_OWS8', no: 'I', thumb: '/assets/yt-slL9iu_OWS8.jpg', date: '2026.10.10' },
   { id: 'b62zBLBz8x0', no: 'II', thumb: '/assets/yt-b62zBLBz8x0.jpg', date: '2026.10.10' },
-  { id: '6RDwFnw-o40', no: 'III', thumb: '/assets/yt-6RDwFnw-o40.jpg', date: '2026.09.12' },
+  { id: 'xnnB6MzRUFA', no: 'III', thumb: '/assets/yt-xnnB6MzRUFA.jpg', date: '2026.09.01' },
 ]
 
 export const stageDates = ['2026.10.10', '2026.09.12', '2026.09.02', '2026.09.01']

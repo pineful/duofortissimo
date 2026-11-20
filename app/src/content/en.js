@@ -107,7 +107,7 @@ export default {
     folio: 'Programme',
     title: 'Three performances left from the stage',
     standfirst:
-      'From the guitar recital of 10 October 2026 and the rehearsals of September. Choose a piece from the list and it plays here.',
+      'Two pieces from the guitar recital of 10 October 2026, and an outdoor busking set on the cafe street in Bojeong-dong on 1 September. Choose a piece from the list and it plays here.',
     listHead: 'Programme',
     videos: [
       {
@@ -125,11 +125,11 @@ export default {
         place: 'The same recital',
       },
       {
-        title: 'MOOB 2026 guitar recital, second rehearsal',
-        sub: 'Rehearsal footage',
-        composer: '',
-        length: '9 min 09 s',
-        place: 'MOOB 2026 guitar recital',
+        title: 'Busking on the Bojeong-dong cafe street',
+        sub: 'Valtzer Fantastico, out of doors',
+        composer: 'E. Marucelli',
+        length: '6 min 30 s',
+        place: 'Bojeong-dong cafe street, Yongin',
       },
     ],
     repTitle: 'Principal repertoire',
@@ -218,7 +218,7 @@ export default {
       },
       {
         what: 'MOOB 2026 guitar recital, second rehearsal',
-        where: 'Rehearsal footage',
+        where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Seoul',
       },
       {
@@ -227,9 +227,9 @@ export default {
         city: 'Mungyeong',
       },
       {
-        what: 'Outdoor busking',
+        what: 'Busking on the Bojeong-dong cafe street',
         where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Seoul',
+        city: 'Yongin',
       },
     ],
     upcoming: {

@@ -106,7 +106,7 @@ export default {
   programme: {
     folio: 'Programme',
     title: '留在舞台上的三場演奏',
-    standfirst: '2026 年 10 月 10 日吉他演奏會與 9 月排練的影像。在列表中選擇曲目，就在這裡播放。',
+    standfirst: '2026 年 10 月 10 日吉他演奏會上演奏的兩首曲子，以及 9 月 1 日在寶亭洞咖啡館街的露天演出。在列表中選擇曲目，就在這裡播放。',
     listHead: 'Programme',
     videos: [
       {
@@ -124,11 +124,11 @@ export default {
         place: '同一場演奏會',
       },
       {
-        title: 'MOOB 2026 吉他演奏會 第二次排練',
-        sub: '排練實況',
-        composer: '',
-        length: '9 分 09 秒',
-        place: 'MOOB 2026 吉他演奏會',
+        title: '寶亭洞咖啡館街露天演出',
+        sub: 'Valtzer Fantastico，露天',
+        composer: 'E. Marucelli',
+        length: '6 分 30 秒',
+        place: '龍仁 寶亭洞咖啡館街',
       },
     ],
     repTitle: '主要曲目',
@@ -216,7 +216,7 @@ export default {
       },
       {
         what: 'MOOB 2026 吉他演奏會 第二次排練',
-        where: '排練實況',
+        where: '演奏 Valtzer Fantastico、Santa Claus March',
         city: '首爾',
       },
       {
@@ -225,9 +225,9 @@ export default {
         city: '聞慶',
       },
       {
-        what: '露天演出',
-        where: 'Valtzer Fantastico、Santa Claus March',
-        city: '首爾',
+        what: '寶亭洞咖啡館街露天演出',
+        where: '演奏 Valtzer Fantastico、Santa Claus March',
+        city: '龍仁',
       },
     ],
     upcoming: {

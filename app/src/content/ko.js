@@ -108,7 +108,7 @@ export default {
     folio: 'Programme',
     title: '무대에서 남긴 세 편의 연주',
     standfirst:
-      '2026년 10월 10일 기타발표회와 9월 리허설 실황입니다. 목록에서 곡을 고르면 이 자리에서 재생됩니다.',
+      '2026년 10월 10일 기타발표회에서 연주한 두 곡과, 9월 1일 보정동 카페거리에서 선 야외 버스킹입니다. 목록에서 곡을 고르면 이 자리에서 재생됩니다.',
     listHead: 'Programme',
     videos: [
       {
@@ -126,11 +126,11 @@ export default {
         place: '같은 발표회',
       },
       {
-        title: 'MOOB 2026 기타발표회 2차 리허설',
-        sub: '리허설 실황',
-        composer: '',
-        length: '9분 09초',
-        place: 'MOOB 2026 기타발표회',
+        title: '보정동 카페거리 버스킹',
+        sub: 'Valtzer Fantastico, 야외에서',
+        composer: 'E. Marucelli',
+        length: '6분 30초',
+        place: '보정동 카페거리',
       },
     ],
     repTitle: '주요 연주곡',
@@ -217,13 +217,17 @@ export default {
         where: "Granada, L'encouragement, Valtzer Fantastico, Santa Claus March 연주",
         city: '서울',
       },
-      { what: 'MOOB 2026 기타발표회 2차 리허설', where: '리허설 실황', city: '서울' },
+      {
+        what: 'MOOB 2026 기타발표회 2차 리허설',
+        where: 'Valtzer Fantastico, Santa Claus March 연주',
+        city: '서울',
+      },
       {
         what: '쌍용양회 문경공장 「재생의 선율 RE;BASIN」 클래식 콘서트',
         where: 'Valtzer Fantastico, Santa Claus March 연주',
         city: '문경',
       },
-      { what: '야외 버스킹', where: 'Valtzer Fantastico, Santa Claus March', city: '서울' },
+      { what: '보정동 카페거리 버스킹', where: 'Valtzer Fantastico, Santa Claus March', city: '용인' },
     ],
     upcoming: {
       stamp: '예정',

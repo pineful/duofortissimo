@@ -107,7 +107,7 @@ export default {
     folio: 'Programme',
     title: 'Tre esecuzioni lasciate dal palco',
     standfirst:
-      'Dal recital di chitarra del 10 ottobre 2026 e dalle prove di settembre. Scegliendo un brano dall’elenco, si ascolta qui.',
+      'Due brani dal recital di chitarra del 10 ottobre 2026 e un’esibizione all’aperto nella via dei caffè di Bojeong-dong, il 1° settembre. Scegliendo un brano dall’elenco, si ascolta qui.',
     listHead: 'Programme',
     videos: [
       {
@@ -125,11 +125,11 @@ export default {
         place: 'Lo stesso recital',
       },
       {
-        title: 'MOOB 2026, recital di chitarra: seconda prova',
-        sub: 'Registrazione delle prove',
-        composer: '',
-        length: '9 min 09 s',
-        place: 'Recital di chitarra MOOB 2026',
+        title: 'Esibizione nella via dei caffè di Bojeong-dong',
+        sub: 'Valtzer Fantastico, all’aperto',
+        composer: 'E. Marucelli',
+        length: '6 min 30 s',
+        place: 'Via dei caffè di Bojeong-dong, Yongin',
       },
     ],
     repTitle: 'Repertorio principale',
@@ -218,7 +218,7 @@ export default {
       },
       {
         what: 'MOOB 2026, recital di chitarra: seconda prova',
-        where: 'Registrazione delle prove',
+        where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Seul',
       },
       {
@@ -227,9 +227,9 @@ export default {
         city: 'Mungyeong',
       },
       {
-        what: 'Esibizione all’aperto',
+        what: 'Esibizione nella via dei caffè di Bojeong-dong',
         where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Seul',
+        city: 'Yongin',
       },
     ],
     upcoming: {

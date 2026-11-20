@@ -107,7 +107,7 @@ export default {
     folio: 'Programme',
     title: '舞台に残した三つの演奏',
     standfirst:
-      '2026年10月10日のギター発表会と、9月のリハーサルの映像です。一覧から曲を選ぶと、この場所で再生されます。',
+      '2026年10月10日のギター発表会で演奏した二曲と、9月1日にポジョンドンのカフェ通りで行った屋外演奏です。一覧から曲を選ぶと、この場所で再生されます。',
     listHead: 'Programme',
     videos: [
       {
@@ -125,11 +125,11 @@ export default {
         place: '同じ発表会',
       },
       {
-        title: 'MOOB 2026 ギター発表会 2次リハーサル',
-        sub: 'リハーサル映像',
-        composer: '',
-        length: '9分09秒',
-        place: 'MOOB 2026 ギター発表会',
+        title: 'ポジョンドン・カフェ通りの路上演奏',
+        sub: 'Valtzer Fantastico、屋外にて',
+        composer: 'E. Marucelli',
+        length: '6分30秒',
+        place: '龍仁 ポジョンドン・カフェ通り',
       },
     ],
     repTitle: '主なレパートリー',
@@ -218,7 +218,7 @@ export default {
       },
       {
         what: 'MOOB 2026 ギター発表会 2次リハーサル',
-        where: 'リハーサル映像',
+        where: 'Valtzer Fantastico、Santa Claus March を演奏',
         city: 'ソウル',
       },
       {
@@ -227,9 +227,9 @@ export default {
         city: '聞慶',
       },
       {
-        what: '野外ライブ',
+        what: 'ポジョンドン・カフェ通りの路上演奏',
         where: 'Valtzer Fantastico、Santa Claus March',
-        city: 'ソウル',
+        city: '龍仁',
       },
     ],
     upcoming: {

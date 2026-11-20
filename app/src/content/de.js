@@ -107,7 +107,7 @@ export default {
     folio: 'Programme',
     title: 'Drei Aufnahmen von der Bühne',
     standfirst:
-      'Vom Gitarrenkonzert am 10. Oktober 2026 und aus den Proben im September. Wählen Sie ein Stück aus der Liste, so erklingt es an dieser Stelle.',
+      'Zwei Stücke vom Gitarrenkonzert am 10. Oktober 2026 und ein Auftritt unter freiem Himmel in der Cafégasse von Bojeong-dong am 1. September. Wählen Sie ein Stück aus der Liste, so erklingt es an dieser Stelle.',
     listHead: 'Programme',
     videos: [
       {
@@ -125,11 +125,11 @@ export default {
         place: 'Dasselbe Konzert',
       },
       {
-        title: 'MOOB 2026 Gitarrenkonzert, zweite Probe',
-        sub: 'Probenaufnahme',
-        composer: '',
-        length: '9 Min. 09 Sek.',
-        place: 'MOOB 2026 Gitarrenkonzert',
+        title: 'Straßenmusik in der Cafégasse von Bojeong-dong',
+        sub: 'Valtzer Fantastico, im Freien',
+        composer: 'E. Marucelli',
+        length: '6 Min. 30 Sek.',
+        place: 'Cafégasse in Bojeong-dong, Yongin',
       },
     ],
     repTitle: 'Hauptrepertoire',
@@ -218,7 +218,7 @@ export default {
       },
       {
         what: 'MOOB 2026 Gitarrenkonzert, zweite Probe',
-        where: 'Probenaufnahme',
+        where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Seoul',
       },
       {
@@ -227,9 +227,9 @@ export default {
         city: 'Mungyeong',
       },
       {
-        what: 'Straßenmusik unter freiem Himmel',
+        what: 'Straßenmusik in der Cafégasse von Bojeong-dong',
         where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Seoul',
+        city: 'Yongin',
       },
     ],
     upcoming: {
