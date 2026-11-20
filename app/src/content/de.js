@@ -138,31 +138,13 @@ export default {
   },
 
   ensembles: {
-    label: 'Verbundene Ensembles',
-    title: 'Zwei Ensembles, mit denen Park Minsoon spielt',
+    label: 'Verbundenes Ensemble',
+    title: 'Das Ensemble, mit dem Park Minsoon spielt',
     standfirst:
-      'Beide Gruppen spielten mit ihm schon, bevor das Duo entstand. Neben jeder stehen der YouTube-Kanal und eine Aufnahme, die sich hier abspielen lässt.',
+      'Die Gruppe spielte mit ihm schon, bevor das Duo entstand. Daneben stehen der YouTube-Kanal und eine Aufnahme, die sich hier abspielen lässt.',
     videoLabel: 'Ausgewählte Aufnahme',
     channelLink: 'YouTube-Kanal',
     items: [
-      {
-        name: 'Animato Mandolin Ensemble',
-        nameLatin: '아니마토 만돌린 앙상블',
-        role: 'Leitung · Mandoline',
-        body:
-          '2009 von vier Ehemaligen des Mandolinenorchesters der Soongsil-Universität als Mandolinenquartett gegründet. Park Minsoon leitet das Ensemble seit dem ersten Konzert und stellt Programme und Besetzungen zusammen; heute reicht die Besetzung vom Quartett über das Quintett mit Gitarre bis zur Orchesterformation. Jedes Jahr gibt es ein Konzert.',
-        facts: [
-          ['Gründung', '2009'],
-          ['Besetzung', 'Mandolinenquartett und -quintett'],
-          ['Park Minsoon', 'Leitung, Mandoline'],
-        ],
-        video: {
-          title: 'Canario',
-          sub: 'J. Rodrigo',
-          place: 'Jahreskonzert 2026',
-          length: '4 Min. 46 Sek.',
-        },
-      },
       {
         name: 'Ehemaligenensemble des Mandolinenorchesters der Soongsil-Universität',
         nameLatin: '숭실 만돌린오케스트라 동문연주단',

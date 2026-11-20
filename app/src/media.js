@@ -50,15 +50,9 @@ export const videos = [
 
 export const stageDates = ['2026.10.10', '2026.09.12', '2026.09.02', '2026.09.01']
 
-// 함께 연주하는 두 단체. 채널 주소와 대표 영상은 실제 유튜브에서 확인한 것입니다.
-// (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @animatomandolin, @ssumo-ob)
+// 박민순이 함께 서는 단체. 채널 주소와 대표 영상은 실제 유튜브에서 확인한 것입니다.
+// (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @ssumo-ob)
 export const ensembles = [
-  {
-    key: 'animato',
-    channel: 'https://www.youtube.com/@animatomandolin',
-    handle: '@animatomandolin',
-    video: { id: 'jNZ_kFA6kAc', thumb: '/assets/yt-ens-jNZ_kFA6kAc.jpg' },
-  },
   {
     key: 'ssumo',
     channel: 'https://www.youtube.com/@ssumo-ob',

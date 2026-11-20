@@ -105,7 +105,7 @@ scripts/
 - `media.photos.gallery[]`: 무대 사진 경로와 `pos`(`object-position`). 캡션과 대체 텍스트는 `content/*.js`의 `stage.gallery`에 있습니다.
 - `content/*.js`의 `stage.stages`: 지난 공연은 배열 맨 위에 최신순으로 넣고, `media.js`의 `stageDates` 순서도 함께 맞춥니다. 표 위의 "지난 무대" 머리글은 `stage.pastLabel`입니다.
 - `content/*.js`의 `stage.upcoming`: 예정 연주 카드입니다. `stamp`(예정 표시), `date`·`weekday`, `title`, `role`, `venue`·`place`, `note`, `link`를 채웁니다. 언어마다 날짜 표기는 `2026.12.17` 꼴로 통일하고 요일만 그 언어로 적습니다.
-- `content/*.js`의 `ensembles`: 연주 섹션 끝의 「함께하는 앙상블」 블록입니다. `items`는 두 단체(아니마토 만돌린 앙상블, 숭실 만돌린오케스트라 동문연주단)이고 순서가 `media.js`의 `ensembles`와 같아야 합니다. 영상 ID·썸네일·채널 주소와 채널 핸들은 `media.js`에, 단체명·소개·사실 항목·영상 제목과 길이는 `content/*.js`에 있습니다.
+- `content/*.js`의 `ensembles`: 연주 섹션 끝의 「함께하는 앙상블」 블록입니다. `items[0]`은 숭실 만돌린오케스트라 동문연주단 하나이고, 순서가 `media.js`의 `ensembles`와 같아야 합니다. 단체명·소개가 먼저 오고 그 아래(데스크톱은 단체명·소개가 왼쪽, 영상이 오른쪽)에 영상 플레이어가 놓입니다. 영상 ID·썸네일·채널 주소와 채널 핸들은 `media.js`에, 단체명·소개·사실 항목·영상 제목과 길이는 `content/*.js`에 있습니다.
 - 언어를 하나 더 넣으려면 `content/`에 파일을 만들고 `content/index.js`의 `LOCALES`에 넣습니다. `index.css`의 언어별 활자 규칙도 함께 손봅니다.
 
 ### 아직 비어 있는 자리

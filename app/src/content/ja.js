@@ -139,30 +139,12 @@ export default {
 
   ensembles: {
     label: '関連アンサンブル',
-    title: 'パク・ミンスンが共に立つ二つのアンサンブル',
+    title: 'パク・ミンスンが共に立つアンサンブル',
     standfirst:
-      'どちらもデュオが生まれる前から一緒に演奏してきた団体です。それぞれのYouTubeチャンネルと、この場で再生できる代表演奏を並べました。',
+      'デュオが生まれる前から一緒に演奏してきた団体です。そのYouTubeチャンネルと、この場で再生できる代表演奏を並べました。',
     videoLabel: '代表演奏',
     channelLink: 'YouTubeチャンネル',
     items: [
-      {
-        name: 'アニマート・マンドリン・アンサンブル',
-        nameLatin: 'Animato Mandolin Ensemble',
-        role: '団長・マンドリン',
-        body:
-          '2009年、崇実大学マンドリンオーケストラの同窓生4人が集まり、マンドリン四重奏として始まりました。パク・ミンスンは創団から団長を務め、プログラムと編成を組んできました。今はギターを加えた五重奏やオーケストラ編成でも舞台に立ちます。毎年定期演奏会を開いています。',
-        facts: [
-          ['創団', '2009年'],
-          ['編成', 'マンドリン四重奏・五重奏'],
-          ['パク・ミンスン', '団長・マンドリン'],
-        ],
-        video: {
-          title: 'Canario',
-          sub: 'カナリオ・J. Rodrigo',
-          place: '2026年定期演奏会',
-          length: '4分46秒',
-        },
-      },
       {
         name: '崇実大学マンドリンオーケストラ同窓演奏団',
         nameLatin: 'Soongsil University Mandolin Orchestra Alumni Ensemble',

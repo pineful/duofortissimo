@@ -140,31 +140,13 @@ export default {
   },
 
   ensembles: {
-    label: 'Ensemble collegate',
-    title: 'Due ensemble in cui suona Park Minsoon',
+    label: 'Ensemble collegato',
+    title: 'L’ensemble in cui suona Park Minsoon',
     standfirst:
-      'Suonavano con lui già prima che nascesse il duo. Accanto a ciascuno, il canale YouTube e un’esecuzione da ascoltare qui.',
+      'Suonava con lui già prima che nascesse il duo. Accanto, il canale YouTube e un’esecuzione da ascoltare qui.',
     videoLabel: 'Esecuzione scelta',
     channelLink: 'Canale YouTube',
     items: [
-      {
-        name: 'Animato Mandolin Ensemble',
-        nameLatin: '아니마토 만돌린 앙상블',
-        role: 'Direttore · Mandolino',
-        body:
-          'Nato nel 2009 da quattro ex allievi dell’Orchestra di Mandolini dell’Università Soongsil, come quartetto di mandolini. Park Minsoon lo dirige dal primo concerto e ne cura programmi e organici, che oggi arrivano al quintetto con chitarra e alla formazione orchestrale. Tiene un concerto ogni anno.',
-        facts: [
-          ['Fondazione', '2009'],
-          ['Organico', 'Quartetto e quintetto di mandolini'],
-          ['Park Minsoon', 'Direttore, mandolino'],
-        ],
-        video: {
-          title: 'Canario',
-          sub: 'J. Rodrigo',
-          place: 'Concerto annuale 2026',
-          length: '4 min 46 s',
-        },
-      },
       {
         name: 'Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil',
         nameLatin: '숭실 만돌린오케스트라 동문연주단',

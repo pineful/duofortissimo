@@ -140,30 +140,12 @@ export default {
 
   ensembles: {
     label: '함께하는 앙상블',
-    title: '박민순이 함께 서는 두 앙상블',
+    title: '박민순이 함께 서는 앙상블',
     standfirst:
-      '듀오가 나오기 전부터 박민순이 함께 연주해 온 두 단체입니다. 각 단체의 유튜브 채널과, 이 자리에서 바로 볼 수 있는 대표 연주를 함께 두었습니다.',
+      '듀오가 나오기 전부터 박민순이 함께 연주해 온 단체입니다. 단체의 유튜브 채널과, 이 자리에서 바로 볼 수 있는 대표 연주를 함께 두었습니다.',
     videoLabel: '대표 연주',
     channelLink: '유튜브 채널',
     items: [
-      {
-        name: '아니마토 만돌린 앙상블',
-        nameLatin: 'Animato Mandolin Ensemble',
-        role: '단장 · 만돌린',
-        body:
-          '2009년 숭실대학교 만돌린오케스트라 동문 네 명이 모여 만돌린 4중주로 출발했습니다. 박민순이 창단 때부터 단장을 맡아 레퍼토리와 편성을 짜 왔고, 지금은 기타를 더한 5중주와 오케스트라 편성까지 무대에 올립니다. 해마다 정기연주회를 엽니다.',
-        facts: [
-          ['창단', '2009년'],
-          ['편성', '만돌린 4중주 · 5중주'],
-          ['박민순', '단장 · 만돌린'],
-        ],
-        video: {
-          title: 'Canario',
-          sub: '카나리오 · J. Rodrigo',
-          place: '2026 정기연주회',
-          length: '4분 46초',
-        },
-      },
       {
         name: '숭실 만돌린오케스트라 동문연주단',
         nameLatin: 'Soongsil University Mandolin Orchestra Alumni Ensemble',

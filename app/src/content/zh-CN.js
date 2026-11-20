@@ -137,30 +137,12 @@ export default {
 
   ensembles: {
     label: '相关乐团',
-    title: 'Park Minsoon 一同登台的两个乐团',
+    title: 'Park Minsoon 一同登台的乐团',
     standfirst:
-      '这两个团体在二重奏成立之前就和他一起演奏。每个团体旁边都有它的 YouTube 频道，以及可以在这里直接观看的代表演奏。',
+      '这个团体在二重奏成立之前就和他一起演奏。这里放着它的 YouTube 频道，以及可以直接在此观看的代表演奏。',
     videoLabel: '代表演奏',
     channelLink: 'YouTube 频道',
     items: [
-      {
-        name: 'Animato 曼陀铃乐团',
-        nameLatin: 'Animato Mandolin Ensemble',
-        role: '团长 · 曼陀铃',
-        body:
-          '2009 年，崇实大学曼陀铃管弦乐团的四位校友聚在一起，以曼陀铃四重奏起步。Park Minsoon 从创团起担任团长，负责曲目与编制，如今也以加入吉他的五重奏和管弦乐编制登台。每年举行定期演奏会。',
-        facts: [
-          ['创团', '2009 年'],
-          ['编制', '曼陀铃四重奏 · 五重奏'],
-          ['Park Minsoon', '团长 · 曼陀铃'],
-        ],
-        video: {
-          title: 'Canario',
-          sub: '卡纳里奥 · J. Rodrigo',
-          place: '2026 年定期演奏会',
-          length: '4 分 46 秒',
-        },
-      },
       {
         name: '崇实大学曼陀铃管弦乐团校友演奏团',
         nameLatin: 'Soongsil University Mandolin Orchestra Alumni Ensemble',

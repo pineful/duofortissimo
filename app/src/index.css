@@ -973,10 +973,11 @@ blockquote {
   line-height: 1.34;
   letter-spacing: -0.025em;
 }
-.ens-grid {
+.ens-card {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: clamp(26px, 4vw, 54px);
+  align-items: start;
   margin-top: clamp(24px, 3.4vw, 42px);
 }
 .ens-plate {
@@ -1076,9 +1077,8 @@ blockquote {
   color: var(--muted-2);
 }
 .ens-copy {
-  margin-top: 18px;
   border-top: 1px solid var(--ink);
-  padding-top: 10px;
+  padding-top: 12px;
 }
 .ens-role {
   font-family: var(--sans);
@@ -1144,12 +1144,15 @@ blockquote {
 }
 
 @media (max-width: 1000px) {
-  .ens-grid {
+  .ens-card {
     grid-template-columns: minmax(0, 1fr);
-    gap: clamp(30px, 5vw, 46px);
+    gap: clamp(24px, 4vw, 34px);
   }
   .ens-body {
     max-width: 62ch;
+  }
+  .ens-plate {
+    max-width: 720px;
   }
 }
 
