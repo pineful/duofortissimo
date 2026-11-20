@@ -166,7 +166,7 @@ export default {
       },
       {
         name: '숭실 만돌린오케스트라 동문연주단',
-        nameLatin: 'Soongsil Mandolin Orchestra Alumni Ensemble',
+        nameLatin: 'Soongsil University Mandolin Orchestra Alumni Ensemble',
         role: '악장 · 만돌린',
         body:
           '숭실대학교 만돌린오케스트라에서 함께 연주한 동문들이 모인 연주단입니다. 박민순은 1994년부터 악장을 맡고 있습니다. 해마다 정기연주회를 열고, 연습 과정도 「우당탕 연습일지」로 유튜브에 남깁니다.',
