@@ -1151,9 +1151,6 @@ blockquote {
   .ens-body {
     max-width: 62ch;
   }
-  .ens-plate {
-    max-width: 720px;
-  }
 }
 
 @media (max-width: 480px) {
