@@ -137,6 +137,53 @@ export default {
       'Both pieces were played again at the Mungyeong concert on 2 September. The repertoire keeps growing.',
   },
 
+  ensembles: {
+    label: 'Related Ensembles',
+    title: 'Two ensembles Park Minsoon stands with',
+    standfirst:
+      'Both groups were playing with him long before the duo began. Each one’s YouTube channel sits here beside a performance you can watch on this page.',
+    videoLabel: 'Featured performance',
+    channelLink: 'YouTube channel',
+    items: [
+      {
+        name: 'Animato Mandolin Ensemble',
+        nameLatin: '아니마토 만돌린 앙상블',
+        role: 'Director · Mandolin',
+        body:
+          'Four alumni of the Soongsil University Mandolin Orchestra started it in 2009 as a mandolin quartet. Park Minsoon has directed it since the first concert, shaping the programmes and the scoring, which now reaches a quintet with guitar and full ensemble line-ups. The ensemble gives a concert every year.',
+        facts: [
+          ['Founded', '2009'],
+          ['Scoring', 'Mandolin quartet and quintet'],
+          ['Park Minsoon', 'Director, mandolin'],
+        ],
+        video: {
+          title: 'Canario',
+          sub: 'J. Rodrigo',
+          place: '2026 annual concert',
+          length: '4 min 46 s',
+        },
+      },
+      {
+        name: 'Soongsil University Mandolin Orchestra Alumni Ensemble',
+        nameLatin: '숭실 만돌린오케스트라 동문연주단',
+        role: 'Concertmaster · Mandolin',
+        body:
+          'The alumni of the Soongsil University Mandolin Orchestra, still playing together after their student years. Park Minsoon has been concertmaster since 1994. The ensemble gives a concert every year and puts its rehearsals on YouTube as the “Udangtang” practice diary.',
+        facts: [
+          ['Affiliation', 'Soongsil University Mandolin Orchestra alumni'],
+          ['Park Minsoon', 'Concertmaster since 1994'],
+          ['Films', 'Concerts and practice diary'],
+        ],
+        video: {
+          title: 'Suite "Für Wolfgang" d-moll',
+          sub: 'L. Mozart',
+          place: '2026 annual concert',
+          length: '8 min 32 s',
+        },
+      },
+    ],
+  },
+
   stage: {
     folio: 'On Stage',
     title: 'Past stages, and the next one',

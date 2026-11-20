@@ -67,7 +67,8 @@ app/
       Masthead.jsx    상단 로고, 메뉴, 언어 전환기
       Cover.jsx       표지(첫 화면), 표지 도판, 차례
       Duo.jsx         듀오 소개, 사실 확인, 두 연주자 프로필
-      Programme.jsx   연주 영상과 연주곡
+      Programme.jsx   연주 영상과 연주곡, 함께하는 앙상블
+      Ensembles.jsx   관련 유튜브 채널과 대표 영상 플레이어
       Stage.jsx       문경 공연 사진, 지난 무대, 다음 무대
       Contact.jsx     섭외 문의
       Colophon.jsx    하단 로고와 링크
@@ -81,6 +82,7 @@ app/
       og-image-v2.jpg     이전 공유 미리보기 (v3로 덮어씀, 같은 1200×630)
       photos/             2026년 9월 2일 문경 공연 사진(웹용 WebP)
       yt-*.jpg            유튜브 영상 썸네일
+      yt-ens-*.jpg        함께하는 앙상블 대표 영상 썸네일
     robots.txt  sitemap.xml  CNAME  favicon-*.png  apple-touch-icon.png
 scripts/
   sync-root.mjs     docs/ → 저장소 루트 복사
@@ -103,11 +105,23 @@ scripts/
 - `media.photos.gallery[]`: 무대 사진 경로와 `pos`(`object-position`). 캡션과 대체 텍스트는 `content/*.js`의 `stage.gallery`에 있습니다.
 - `content/*.js`의 `stage.stages`: 지난 공연은 배열 맨 위에 최신순으로 넣고, `media.js`의 `stageDates` 순서도 함께 맞춥니다. 표 위의 "지난 무대" 머리글은 `stage.pastLabel`입니다.
 - `content/*.js`의 `stage.upcoming`: 예정 연주 카드입니다. `stamp`(예정 표시), `date`·`weekday`, `title`, `role`, `venue`·`place`, `note`, `link`를 채웁니다. 언어마다 날짜 표기는 `2026.12.17` 꼴로 통일하고 요일만 그 언어로 적습니다.
+- `content/*.js`의 `ensembles`: 연주 섹션 끝의 「함께하는 앙상블」 블록입니다. `items`는 두 단체(아니마토 만돌린 앙상블, 숭실 만돌린오케스트라 동문연주단)이고 순서가 `media.js`의 `ensembles`와 같아야 합니다. 영상 ID·썸네일·채널 주소와 채널 핸들은 `media.js`에, 단체명·소개·사실 항목·영상 제목과 길이는 `content/*.js`에 있습니다.
 - 언어를 하나 더 넣으려면 `content/`에 파일을 만들고 `content/index.js`의 `LOCALES`에 넣습니다. `index.css`의 언어별 활자 규칙도 함께 손봅니다.
 
 ### 아직 비어 있는 자리
 
 - 이철규 님의 학력과 연주 경력. 지금은 소속 한 줄과 "곧 올립니다" 안내만 있습니다.
+
+## 관련 유튜브
+
+연주 섹션 끝의 「함께하는 앙상블」은 아래 두 채널로 이어집니다(2026년 11월 20일 확인).
+
+| 단체 | 채널 | 대표 영상 |
+| --- | --- | --- |
+| 아니마토 만돌린 앙상블 | https://www.youtube.com/@animatomandolin | Canario · J. Rodrigo (2026 정기연주회) |
+| 숭실 만돌린오케스트라 동문연주단 | https://www.youtube.com/@ssumo-ob | Suite "Für Wolfgang" d-moll · L. Mozart (2026 정기연주회) |
+
+영상을 바꿀 때는 `media.js`의 `ensembles[].video.id`와 썸네일 파일(`public/assets/yt-ens-*.jpg`)을 함께 바꾸고, 영상 제목·길이는 여덟 언어의 `ensembles.items[].video`에 적습니다.
 
 ## 이미지
 

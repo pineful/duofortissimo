@@ -135,6 +135,53 @@ export default {
     repFoot: '两首曲子也在 9 月 2 日的闻庆音乐会上演奏过。曲目还在不断增加。',
   },
 
+  ensembles: {
+    label: '相关乐团',
+    title: 'Park Minsoon 一同登台的两个乐团',
+    standfirst:
+      '这两个团体在二重奏成立之前就和他一起演奏。每个团体旁边都有它的 YouTube 频道，以及可以在这里直接观看的代表演奏。',
+    videoLabel: '代表演奏',
+    channelLink: 'YouTube 频道',
+    items: [
+      {
+        name: 'Animato 曼陀铃乐团',
+        nameLatin: 'Animato Mandolin Ensemble',
+        role: '团长 · 曼陀铃',
+        body:
+          '2009 年，崇实大学曼陀铃管弦乐团的四位校友聚在一起，以曼陀铃四重奏起步。Park Minsoon 从创团起担任团长，负责曲目与编制，如今也以加入吉他的五重奏和管弦乐编制登台。每年举行定期演奏会。',
+        facts: [
+          ['创团', '2009 年'],
+          ['编制', '曼陀铃四重奏 · 五重奏'],
+          ['Park Minsoon', '团长 · 曼陀铃'],
+        ],
+        video: {
+          title: 'Canario',
+          sub: '卡纳里奥 · J. Rodrigo',
+          place: '2026 年定期演奏会',
+          length: '4 分 46 秒',
+        },
+      },
+      {
+        name: '崇实大学曼陀铃管弦乐团校友演奏团',
+        nameLatin: 'Soongsil University Mandolin Orchestra Alumni Ensemble',
+        role: '首席 · 曼陀铃',
+        body:
+          '由在崇实大学曼陀铃管弦乐团一起演奏过的校友组成的演奏团。Park Minsoon 自 1994 年起担任首席。每年举行定期演奏会，练习的过程也以「Udangtang 练习日志」留在 YouTube 上。',
+        facts: [
+          ['所属', '崇实大学曼陀铃管弦乐团校友'],
+          ['Park Minsoon', '1994 年起任首席'],
+          ['影像', '定期演奏会 · 练习日志'],
+        ],
+        video: {
+          title: 'Suite "Für Wolfgang" d-moll',
+          sub: 'L. Mozart',
+          place: '2026 年定期演奏会',
+          length: '8 分 32 秒',
+        },
+      },
+    ],
+  },
+
   stage: {
     folio: 'On Stage',
     title: '过往的舞台，与下一个舞台',

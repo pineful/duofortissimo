@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { site, videos } from '../media.js'
 import { useI18n } from '../i18n.jsx'
 import { Reveal, PlayIcon, ArrowIcon } from './shared.jsx'
+import Ensembles from './Ensembles.jsx'
 
 function Programme() {
   const { c } = useI18n()
@@ -122,6 +123,8 @@ export default function ProgrammeSection() {
           ))}
           <p className="rep-foot">{p.repFoot}</p>
         </div>
+
+        <Ensembles />
       </div>
     </section>
   )

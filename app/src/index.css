@@ -949,6 +949,232 @@ blockquote {
   color: var(--muted);
 }
 
+/* ── 함께하는 앙상블(관련 유튜브) ─────────────── */
+.ensembles {
+  margin-top: clamp(46px, 7vw, 84px);
+  border-top: 2px solid var(--ink);
+  padding-top: 16px;
+}
+.ens-head {
+  max-width: none;
+}
+.ens-label {
+  font-family: var(--sans);
+  font-size: 9.5px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ens-title {
+  margin-top: 12px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(22px, 2.5vw, 31px);
+  line-height: 1.34;
+  letter-spacing: -0.025em;
+}
+.ens-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(26px, 4vw, 54px);
+  margin-top: clamp(24px, 3.4vw, 42px);
+}
+.ens-plate {
+  margin: 0;
+}
+.ens-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #141b28;
+  border: 1px solid var(--ink);
+  padding: 6px;
+}
+.ens-frame::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(245, 241, 232, 0.18);
+  pointer-events: none;
+  z-index: 2;
+}
+.ens-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.ens-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: #141b28;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ens-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  filter: sepia(0.12) contrast(1.02) saturate(0.94);
+  transition: transform 1.3s var(--ease), opacity 0.5s;
+}
+.ens-btn:hover img {
+  transform: scale(1.02);
+  opacity: 1;
+}
+.ens-play {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border: 1px solid rgba(247, 241, 229, 0.7);
+  background: rgba(23, 19, 16, 0.45);
+  color: #f5f1e8;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background 0.35s, color 0.35s;
+}
+.ens-play svg {
+  width: 12px;
+  height: 12px;
+}
+.ens-btn:hover .ens-play {
+  background: #f5f1e8;
+  color: #142033;
+}
+.ens-caption {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.ens-caption > span:first-child {
+  flex: none;
+  padding-top: 2px;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.ens-caption em {
+  display: block;
+  font-style: normal;
+  color: var(--muted-2);
+}
+.ens-copy {
+  margin-top: 18px;
+  border-top: 1px solid var(--ink);
+  padding-top: 10px;
+}
+.ens-role {
+  font-family: var(--sans);
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ens-card h4 {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(20px, 1.95vw, 25px);
+  line-height: 1.36;
+  letter-spacing: -0.02em;
+}
+.ens-card h4 span {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 13.5px;
+  letter-spacing: 0;
+  color: var(--muted-2);
+}
+.ens-body {
+  margin-top: 12px;
+  font-size: 13.6px;
+  line-height: 1.95;
+  color: var(--ink-soft);
+}
+.ens-facts {
+  margin-top: 14px;
+}
+.ens-facts > div {
+  display: grid;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: 12px;
+  padding: 7px 0;
+  border-top: 1px dotted rgba(20, 32, 51, 0.26);
+}
+.ens-facts dt {
+  font-family: var(--sans);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  padding-top: 2px;
+}
+.ens-facts dd {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+.ens-card .text-link {
+  margin-top: 16px;
+}
+.ens-handle {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--muted-2);
+}
+
+@media (max-width: 1000px) {
+  .ens-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(30px, 5vw, 46px);
+  }
+  .ens-body {
+    max-width: 62ch;
+  }
+}
+
+@media (max-width: 480px) {
+  .ens-facts > div {
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .ens-caption {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .ens-caption > span:first-child {
+    padding-top: 0;
+  }
+  .ens-play {
+    right: 10px;
+    bottom: 10px;
+    padding: 8px;
+  }
+  .ens-play span {
+    display: none;
+  }
+}
+
 /* ── 무대 ───────────────────────────────────── */
 .stage-label {
   margin: 0 0 12px;
