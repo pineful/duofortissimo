@@ -93,7 +93,7 @@ export default {
         photoCaption: 'Lee Chulkyu playing on stage',
         photoAlt: 'Lee Chulkyu playing the classical guitar on stage',
         facts: [['Affiliation', 'Guitar section leader, Soongsil University Mandolin Orchestra Alumni Ensemble']],
-        note: 'His education and performing career will follow shortly.',
+        note: null,
       },
     ],
   },
@@ -139,21 +139,22 @@ export default {
 
   ensembles: {
     label: 'Related Ensemble',
-    title: 'The ensemble Park Minsoon stands with',
+    title: 'The ensemble both of them play in',
     standfirst:
-      'This group was playing with him long before the duo began. Its YouTube channel sits here beside a performance you can watch on this page.',
+      'The group Park Minsoon and Lee Chulkyu play in together. Its YouTube channel sits here beside a performance you can watch on this page.',
     videoLabel: 'Featured performance',
     channelLink: 'YouTube channel',
     items: [
       {
         name: 'Soongsil University Mandolin Orchestra Alumni Ensemble',
         nameLatin: '숭실 만돌린오케스트라 동문연주단',
-        role: 'Concertmaster · Mandolin',
+        role: 'Mandolin · Classical guitar',
         body:
-          'The alumni of the Soongsil University Mandolin Orchestra, still playing together after their student years. Park Minsoon has been concertmaster since 1994. The ensemble gives a concert every year and puts its rehearsals on YouTube as the “Udangtang” practice diary.',
+          'The alumni of the Soongsil University Mandolin Orchestra, still playing together after their student years. Park Minsoon has been concertmaster since 1994, and Lee Chulkyu leads the guitar section. The ensemble gives a concert every year and puts its rehearsals on YouTube as the “Udangtang” practice diary.',
         facts: [
+          ['Players', 'Park Minsoon (mandolin) · Lee Chulkyu (classical guitar)'],
           ['Affiliation', 'Soongsil University Mandolin Orchestra alumni'],
-          ['Park Minsoon', 'Concertmaster since 1994'],
+          ['Roles', 'Park Minsoon, concertmaster · Lee Chulkyu, guitar section'],
           ['Films', 'Concerts and practice diary'],
         ],
         video: {

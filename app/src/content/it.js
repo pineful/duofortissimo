@@ -95,7 +95,7 @@ export default {
         facts: [
           ['Affiliazione', 'Capo sezione chitarre dell’Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil'],
         ],
-        note: 'Formazione e carriera artistica saranno pubblicate a breve.',
+        note: null,
       },
     ],
   },
@@ -141,21 +141,22 @@ export default {
 
   ensembles: {
     label: 'Ensemble collegato',
-    title: 'L’ensemble in cui suona Park Minsoon',
+    title: 'L’ensemble in cui suonano entrambi',
     standfirst:
-      'Suonava con lui già prima che nascesse il duo. Accanto, il canale YouTube e un’esecuzione da ascoltare qui.',
+      'Il gruppo in cui Park Minsoon e Lee Chulkyu suonano insieme. Accanto, il canale YouTube e un’esecuzione da ascoltare qui.',
     videoLabel: 'Esecuzione scelta',
     channelLink: 'Canale YouTube',
     items: [
       {
         name: 'Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil',
         nameLatin: '숭실 만돌린오케스트라 동문연주단',
-        role: 'Spalla · Mandolino',
+        role: 'Mandolino · Chitarra classica',
         body:
-          'Gli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil, che continuano a suonare insieme dopo gli studi. Park Minsoon ne è spalla dal 1994. Ogni anno tiene un concerto e pubblica le prove su YouTube nel diario «Udangtang».',
+          'Gli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil, che continuano a suonare insieme dopo gli studi. Park Minsoon ne è spalla dal 1994 e Lee Chulkyu guida la sezione delle chitarre. Ogni anno tiene un concerto e pubblica le prove su YouTube nel diario «Udangtang».',
         facts: [
+          ['Interpreti', 'Park Minsoon (mandolino) · Lee Chulkyu (chitarra classica)'],
           ['Appartenenza', 'Ex allievi dell’Orchestra di Mandolini Soongsil'],
-          ['Park Minsoon', 'Spalla dal 1994'],
+          ['Ruoli', 'Park Minsoon spalla · Lee Chulkyu sezione chitarre'],
           ['Video', 'Concerti e diario delle prove'],
         ],
         video: {

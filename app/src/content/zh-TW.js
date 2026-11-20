@@ -93,7 +93,7 @@ export default {
         photoCaption: '在舞台上演奏古典吉他的 Lee Chulkyu',
         photoAlt: '在舞台上演奏古典吉他的 Lee Chulkyu',
         facts: [['所屬', '崇實大學曼陀林管弦樂團校友演奏團 吉他聲部長']],
-        note: '學歷與演奏經歷整理後即將刊登。',
+        note: null,
       },
     ],
   },
@@ -137,21 +137,22 @@ export default {
 
   ensembles: {
     label: '相關樂團',
-    title: 'Park Minsoon 一同登台的樂團',
+    title: '兩人一同登台的樂團',
     standfirst:
-      '這個團體在二重奏成立之前就和他一起演奏。這裡放著它的 YouTube 頻道，以及可以直接在此觀看的代表演奏。',
+      'Park Minsoon 與 Lee Chulkyu 一同演奏的團體。這裡放著它的 YouTube 頻道，以及可以直接在此觀看的代表演奏。',
     videoLabel: '代表演奏',
     channelLink: 'YouTube 頻道',
     items: [
       {
         name: '崇實大學曼陀林管弦樂團校友演奏團',
         nameLatin: 'Soongsil University Mandolin Orchestra Alumni Ensemble',
-        role: '首席 · 曼陀林',
+        role: '曼陀林 · 古典吉他',
         body:
-          '由曾在崇實大學曼陀林管弦樂團一起演奏的校友組成的演奏團。Park Minsoon 自 1994 年起擔任首席。每年舉行定期演奏會，練習的過程也以「Udangtang 練習日誌」留在 YouTube 上。',
+          '由曾在崇實大學曼陀林管弦樂團一起演奏的校友組成的演奏團。Park Minsoon 自 1994 年起擔任首席，Lee Chulkyu 負責吉他聲部。每年舉行定期演奏會，練習的過程也以「Udangtang 練習日誌」留在 YouTube 上。',
         facts: [
+          ['演奏者', 'Park Minsoon（曼陀林）· Lee Chulkyu（古典吉他）'],
           ['所屬', '崇實大學曼陀林管弦樂團校友'],
-          ['Park Minsoon', '1994 年起任首席'],
+          ['分工', 'Park Minsoon 首席 · Lee Chulkyu 吉他聲部'],
           ['影像', '定期演奏會 · 練習日誌'],
         ],
         video: {

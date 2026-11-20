@@ -93,7 +93,7 @@ export default {
         photoCaption: 'Lee Chulkyu beim Spiel auf der Bühne',
         photoAlt: 'Lee Chulkyu an der klassischen Gitarre auf der Bühne',
         facts: [['Funktion', 'Leiter der Gitarrengruppe im Ehemaligenensemble des Mandolinenorchesters der Soongsil-Universität']],
-        note: 'Ausbildung und Konzertlaufbahn folgen in Kürze.',
+        note: null,
       },
     ],
   },
@@ -139,21 +139,22 @@ export default {
 
   ensembles: {
     label: 'Verbundenes Ensemble',
-    title: 'Das Ensemble, mit dem Park Minsoon spielt',
+    title: 'Das Ensemble, in dem beide spielen',
     standfirst:
-      'Die Gruppe spielte mit ihm schon, bevor das Duo entstand. Daneben stehen der YouTube-Kanal und eine Aufnahme, die sich hier abspielen lässt.',
+      'Die Gruppe, in der Park Minsoon und Lee Chulkyu gemeinsam spielen. Daneben stehen der YouTube-Kanal und eine Aufnahme, die sich hier abspielen lässt.',
     videoLabel: 'Ausgewählte Aufnahme',
     channelLink: 'YouTube-Kanal',
     items: [
       {
         name: 'Ehemaligenensemble des Mandolinenorchesters der Soongsil-Universität',
         nameLatin: '숭실 만돌린오케스트라 동문연주단',
-        role: 'Konzertmeister · Mandoline',
+        role: 'Mandoline · Klassische Gitarre',
         body:
-          'Die Ehemaligen des Mandolinenorchesters der Soongsil-Universität, die auch nach dem Studium zusammen spielen. Park Minsoon ist seit 1994 Konzertmeister. Das Ensemble gibt jedes Jahr ein Konzert und stellt seine Proben als „Udangtang“-Probetagebuch auf YouTube.',
+          'Die Ehemaligen des Mandolinenorchesters der Soongsil-Universität, die auch nach dem Studium zusammen spielen. Park Minsoon ist seit 1994 Konzertmeister, Lee Chulkyu leitet die Gitarrengruppe. Das Ensemble gibt jedes Jahr ein Konzert und stellt seine Proben als „Udangtang“-Probetagebuch auf YouTube.',
         facts: [
+          ['Mitwirkende', 'Park Minsoon (Mandoline) · Lee Chulkyu (klassische Gitarre)'],
           ['Zugehörigkeit', 'Ehemalige des Mandolinenorchesters der Soongsil-Universität'],
-          ['Park Minsoon', 'Konzertmeister seit 1994'],
+          ['Rollen', 'Park Minsoon Konzertmeister · Lee Chulkyu Gitarrengruppe'],
           ['Aufnahmen', 'Konzerte und Probetagebuch'],
         ],
         video: {
