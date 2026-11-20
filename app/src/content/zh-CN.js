@@ -144,7 +144,7 @@ export default {
     label: '相关乐团',
     title: '两人一同登台的乐团',
     standfirst:
-      'Park Minsoon 与 Lee Chulkyu 一同演奏的团体。这里放着它的 YouTube 频道，以及可以直接在此观看的代表演奏。',
+      'Park Minsoon 与 Lee Chulkyu 一同演奏的团体。这里放着它的 YouTube 频道，以及可以直接在此观看的两段代表演奏。',
     videoLabel: '代表演奏',
     channelLink: 'YouTube 频道',
     items: [

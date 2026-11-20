@@ -146,7 +146,7 @@ export default {
     label: 'Ensemble collegato',
     title: 'L’ensemble in cui suonano entrambi',
     standfirst:
-      'Il gruppo in cui Park Minsoon e Lee Chulkyu suonano insieme. Accanto, il canale YouTube e un’esecuzione da ascoltare qui.',
+      'Il gruppo in cui Park Minsoon e Lee Chulkyu suonano insieme. Accanto, il canale YouTube e due esecuzioni da ascoltare qui.',
     videoLabel: 'Esecuzione scelta',
     channelLink: 'Canale YouTube',
     items: [

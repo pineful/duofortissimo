@@ -105,23 +105,24 @@ scripts/
 - `media.photos.gallery[]`: 무대 사진 경로와 `pos`(`object-position`). 캡션과 대체 텍스트는 `content/*.js`의 `stage.gallery`에 있습니다.
 - `content/*.js`의 `stage.stages`: 지난 공연은 배열 맨 위에 최신순으로 넣고, `media.js`의 `stageDates` 순서도 함께 맞춥니다. 표 위의 "지난 무대" 머리글은 `stage.pastLabel`입니다.
 - `content/*.js`의 `stage.upcoming`: 예정 연주 카드입니다. `stamp`(예정 표시), `date`·`weekday`, `title`, `role`, `venue`·`place`, `note`, `link`를 채웁니다. 언어마다 날짜 표기는 `2026.12.17` 꼴로 통일하고 요일만 그 언어로 적습니다.
-- `content/*.js`의 `ensembles`: 연주 섹션 끝의 「함께하는 앙상블」 블록입니다. `items[0]`은 숭실 만돌린오케스트라 동문연주단 하나이고, 순서가 `media.js`의 `ensembles`와 같아야 합니다. 단체명·소개가 먼저 오고 그 아래(데스크톱은 단체명·소개가 왼쪽, 영상이 오른쪽)에 영상 플레이어가 놓입니다. 영상 ID·썸네일·채널 주소와 채널 핸들은 `media.js`에, 단체명·소개·사실 항목·영상 제목과 길이는 `content/*.js`에 있습니다.
+- `content/*.js`의 `ensembles`: 연주 섹션 끝의 「함께하는 앙상블」 블록입니다. `items[0]`은 숭실 만돌린오케스트라 동문연주단 하나이고, 순서가 `media.js`의 `ensembles`와 같아야 합니다. 단체명·소개가 먼저 오고 그 아래(데스크톱은 단체명·소개가 왼쪽, 영상이 오른쪽)에 영상 플레이어가 `items[].videos` 순서대로 쌓입니다. 영상 ID·썸네일·채널 주소와 채널 핸들은 `media.js`에, 단체명·소개·사실 항목·영상 이름표(`tag`)·제목·부제·설명(`meta`)은 `content/*.js`에 있습니다.
+- 플레이어 하나를 누르면 나머지 플레이어는 썸네일로 돌아갑니다(한 번에 한 영상만 재생).
 - 언어를 하나 더 넣으려면 `content/`에 파일을 만들고 `content/index.js`의 `LOCALES`에 넣습니다. `index.css`의 언어별 활자 규칙도 함께 손봅니다.
 
 ### 아직 비어 있는 자리
 
-- 이철규 님의 학력과 연주 경력. 지금은 소속 한 줄과 "곧 올립니다" 안내만 있습니다.
+- 이철규 님의 학력. 확인된 것만 적는 방침이라 정기연주회 참여와 기타 발표회 연주까지만 넣었고, 출신 학교·전공은 확인되면 채웁니다.
 
 ## 관련 유튜브
 
-연주 섹션 끝의 「함께하는 앙상블」은 아래 두 채널로 이어집니다(2026년 11월 20일 확인).
+연주 섹션 끝의 「함께하는 앙상블」은 숭실 만돌린오케스트라 동문연주단 유튜브 채널(@ssumo-ob, 2026년 11월 20일 확인)로 이어지고, 그 아래 두 편을 이 자리에서 바로 재생합니다.
 
-| 단체 | 채널 | 대표 영상 |
+| 영상 | ID | 내용 |
 | --- | --- | --- |
-| 아니마토 만돌린 앙상블 | https://www.youtube.com/@animatomandolin | Canario · J. Rodrigo (2026 정기연주회) |
-| 숭실 만돌린오케스트라 동문연주단 | https://www.youtube.com/@ssumo-ob | Suite "Für Wolfgang" d-moll · L. Mozart (2026 정기연주회) |
+| Suite "Für Wolfgang" d-moll · L. Mozart | `hySoMWFKzkg` | 2026 정기연주회 (8분 32초) |
+| L'encouragement, Op. 34 · F. Sor | `rASIXVtzvPo` | 2026/10/10 기타 발표회 실황 중 41:46부터 (전체 1시간 30분, 이철규·서민석) |
 
-영상을 바꿀 때는 `media.js`의 `ensembles[].video.id`와 썸네일 파일(`public/assets/yt-ens-*.jpg`)을 함께 바꾸고, 영상 제목·길이는 여덟 언어의 `ensembles.items[].video`에 적습니다.
+영상을 바꿀 때는 `media.js`의 `ensembles[].videos[i].id`(대목부터 틀 영상은 `start`에 초)와 썸네일 파일(`public/assets/yt-ens-*.jpg`)을 함께 바꾸고, 이름표·제목·부제·설명은 여덟 언어의 `ensembles.items[].videos[i]`에 같은 순서로 적습니다.
 
 ## 이미지
 

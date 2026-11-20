@@ -146,7 +146,7 @@ export default {
     label: 'Related Ensemble',
     title: 'The ensemble both of them play in',
     standfirst:
-      'The group Park Minsoon and Lee Chulkyu play in together. Its YouTube channel sits here beside a performance you can watch on this page.',
+      'The group Park Minsoon and Lee Chulkyu play in together. Its YouTube channel sits here beside two performances you can watch on this page.',
     videoLabel: 'Featured performance',
     channelLink: 'YouTube channel',
     items: [

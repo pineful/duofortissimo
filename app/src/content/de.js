@@ -146,7 +146,7 @@ export default {
     label: 'Verbundenes Ensemble',
     title: 'Das Ensemble, in dem beide spielen',
     standfirst:
-      'Die Gruppe, in der Park Minsoon und Lee Chulkyu gemeinsam spielen. Daneben stehen der YouTube-Kanal und eine Aufnahme, die sich hier abspielen lässt.',
+      'Die Gruppe, in der Park Minsoon und Lee Chulkyu gemeinsam spielen. Daneben stehen der YouTube-Kanal und zwei Aufnahmen, die sich hier abspielen lassen.',
     videoLabel: 'Ausgewählte Aufnahme',
     channelLink: 'YouTube-Kanal',
     items: [
