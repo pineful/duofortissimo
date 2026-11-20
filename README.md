@@ -76,7 +76,7 @@ app/
       logo-mark.png       ff 심볼 (투명 PNG, 로고 원본에서 추출)
       logo-wordmark.png   Duo Fortissimo 워드마크 (투명 PNG)
       logo-lockup.png     심볼 + 워드마크 + 한글 + MANDOLIN·GUITAR
-      og-image.jpg        공유 미리보기 1200×630
+      og-image-v2.jpg     공유 미리보기 1200×630 (og:image·twitter:image, 저장소 루트 /og-image-v2.jpg)
       photos/             2026년 9월 2일 문경 공연 사진(웹용 WebP)
       yt-*.jpg            유튜브 영상 썸네일
     robots.txt  sitemap.xml  CNAME  favicon-*.png  apple-touch-icon.png
@@ -119,7 +119,7 @@ scripts/
 | `stage-*.webp` | 무대 사진 네 장 |
 
 원본은 구글 드라이브 `듀오 포르티시모` 폴더에 있습니다. 사진을 바꿀 때는 같은 비율로 잘라
-WebP로 저장하고 파일 이름을 유지하면 됩니다. 표지와 공유 미리보기(`og-image.jpg`)는
+WebP로 저장하고 파일 이름을 유지하면 됩니다. 표지와 공유 미리보기(`og-image-v2.jpg`)는
 두 사람이 함께 나온 사진을 씁니다.
 
 ## 로컬에서 보기
