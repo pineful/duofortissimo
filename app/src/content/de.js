@@ -217,11 +217,6 @@ export default {
         city: 'Seoul',
       },
       {
-        what: 'MOOB 2026 Gitarrenkonzert, zweite Probe',
-        where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Seoul',
-      },
-      {
         what: 'Zementwerk Ssangyong in Mungyeong, klassisches Konzert „RE;BASIN“',
         where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Mungyeong',

@@ -217,11 +217,6 @@ export default {
         city: 'ソウル',
       },
       {
-        what: 'MOOB 2026 ギター発表会 2次リハーサル',
-        where: 'Valtzer Fantastico、Santa Claus March を演奏',
-        city: 'ソウル',
-      },
-      {
         what: 'サンヨン・セメント聞慶工場「再生の旋律 RE;BASIN」クラシックコンサート',
         where: 'Valtzer Fantastico、Santa Claus March を演奏',
         city: '聞慶',

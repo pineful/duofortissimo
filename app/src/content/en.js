@@ -217,11 +217,6 @@ export default {
         city: 'Seoul',
       },
       {
-        what: 'MOOB 2026 guitar recital, second rehearsal',
-        where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Seoul',
-      },
-      {
         what: 'Ssangyong cement plant, Mungyeong: RE;BASIN classical concert',
         where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Mungyeong',

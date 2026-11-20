@@ -217,11 +217,6 @@ export default {
         city: 'Сеул',
       },
       {
-        what: 'MOOB 2026, гитарный вечер: вторая репетиция',
-        where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Сеул',
-      },
-      {
         what: 'Цементный завод Ссанъён в Мунгёне, концерт «RE;BASIN»',
         where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Мунгён',

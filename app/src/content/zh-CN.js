@@ -215,11 +215,6 @@ export default {
         city: '首尔',
       },
       {
-        what: 'MOOB 2026 吉他演奏会 第二次排练',
-        where: '演奏 Valtzer Fantastico、Santa Claus March',
-        city: '首尔',
-      },
-      {
         what: 'Ssangyong 水泥闻庆工厂“再生之旋律 RE;BASIN”古典音乐会',
         where: '演奏 Valtzer Fantastico、Santa Claus March',
         city: '闻庆',

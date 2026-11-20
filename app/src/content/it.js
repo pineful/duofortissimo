@@ -217,11 +217,6 @@ export default {
         city: 'Seul',
       },
       {
-        what: 'MOOB 2026, recital di chitarra: seconda prova',
-        where: 'Valtzer Fantastico, Santa Claus March',
-        city: 'Seul',
-      },
-      {
         what: 'Cementificio Ssangyong di Mungyeong, concerto classico «RE;BASIN»',
         where: 'Valtzer Fantastico, Santa Claus March',
         city: 'Mungyeong',

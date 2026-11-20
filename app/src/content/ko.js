@@ -218,11 +218,6 @@ export default {
         city: '서울',
       },
       {
-        what: 'MOOB 2026 기타발표회 2차 리허설',
-        where: 'Valtzer Fantastico, Santa Claus March 연주',
-        city: '서울',
-      },
-      {
         what: '쌍용양회 문경공장 「재생의 선율 RE;BASIN」 클래식 콘서트',
         where: 'Valtzer Fantastico, Santa Claus March 연주',
         city: '문경',

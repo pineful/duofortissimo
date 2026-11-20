@@ -53,7 +53,7 @@ export const videos = [
   { id: 'xnnB6MzRUFA', no: 'III', thumb: '/assets/yt-xnnB6MzRUFA.jpg', date: '2026.09.01' },
 ]
 
-export const stageDates = ['2026.10.10', '2026.09.12', '2026.09.02', '2026.09.01']
+export const stageDates = ['2026.10.10', '2026.09.02', '2026.09.01']
 
 // 박민순이 함께 서는 단체. 채널 주소와 대표 영상은 실제 유튜브에서 확인한 것입니다.
 // (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @ssumo-ob)
