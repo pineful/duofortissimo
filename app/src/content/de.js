@@ -49,11 +49,11 @@ export default {
     title: ['Wenn die Mandoline singt,', 'hält die Gitarre den Grund darunter'],
     body: [
       'Die Mandoline trägt acht Saiten in vier Paaren. Ihr Kennzeichen ist das Tremolo: schnelle Schläge des Plektrums, die zu einem langen Ton zusammenfließen. Daneben übernimmt die klassische Gitarre den Bass und die Harmonie.',
-      'Zwei Instrumente allein, und doch bleibt die Faktur einer Orchesterpartitur erhalten.',
+      'Zwei Instrumente allein, und doch bleibt das Geflecht einer Orchesterpartitur hörbar.',
     ],
     quote: 'Wenn zwei Instrumente einen Atemzug teilen, gewinnt auch ein kleiner Raum die Weite einer Bühne.',
     body2: [
-      'Die beiden spielen seit Jahren Seite an Seite, als Älterer und als Jüngerer, im Ehemaligenensemble des Mandolinenorchesters der Soongsil-Universität. Im August 2026 gründeten sie das Duo; seither spielen sie in Konzerten, bei Firmenveranstaltungen und auf Bühnen unter freiem Himmel, ohne nach dem Ort zu fragen.',
+      'Die beiden spielen seit Jahren Seite an Seite, als Älterer und als Jüngerer, im Ehemaligenensemble des Mandolinenorchesters der Soongsil-Universität. Im August 2026 gründeten sie das Duo; seither spielen sie im Konzertsaal, bei Firmenveranstaltungen und auf Bühnen unter freiem Himmel, ohne einen Ort auszuschlagen.',
       'Fortissimo ist die dynamische Bezeichnung für „sehr stark“. Wie der Name sagt, ist der Klang, den die beiden Instrumente gemeinsam erzeugen, klein in der Besetzung und doch von festem Gewicht.',
     ],
     sideCaption: 'Auf der Bühne in Mungyeong, 2. September 2026.',
@@ -75,9 +75,9 @@ export default {
         photoCaption: '2. September 2026, auf dem Konzertgelände in Mungyeong',
         photoAlt: 'Park Minsoon mit der Mandoline auf dem Konzertgelände in Mungyeong',
         facts: [
-          ['1990–1994', 'Erste Mandoline und Bibliothekswart im Mandolinenorchester der Soongsil-Universität'],
+          ['1990–1994', 'Erste Mandoline und Notenwart im Mandolinenorchester der Soongsil-Universität'],
           ['1994–', 'Konzertmeister des Ehemaligenensembles des Mandolinenorchesters der Soongsil-Universität'],
-          ['Dirigat', 'Gastdirigent und Dozent des Bundang Mandolin Orchestra'],
+          ['Dirigat', 'Gastdirigent und Probenleiter des Bundang Mandolin Orchestra'],
           ['2008 · 2011', 'Zwei Mandolinenrecitals (Seongnam Arts Center, Baekseok Art Hall)'],
           ['2009–', 'Leiter des Animato Mandolin Ensemble'],
           ['2009–2011', 'Magister der Instrumentalmusik (Mandoline), Musikhochschule der Baekseok-Universität'],
