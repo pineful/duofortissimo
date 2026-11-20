@@ -213,7 +213,7 @@ export default {
     stages: [
       {
         what: 'Recital di chitarra dell’Ensemble di mandolini Soongsil',
-        where: 'Valtzer Fantastico, Santa Claus March',
+        where: "Granada, L'encouragement, Valtzer Fantastico, Santa Claus March",
         city: 'Seul',
       },
       {

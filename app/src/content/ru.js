@@ -213,7 +213,7 @@ export default {
     stages: [
       {
         what: 'Гитарный вечер Ансамбля выпускников Мандолинного оркестра университета Сунсиль',
-        where: 'Valtzer Fantastico, Santa Claus March',
+        where: "Granada, L'encouragement, Valtzer Fantastico, Santa Claus March",
         city: 'Сеул',
       },
       {

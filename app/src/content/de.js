@@ -213,7 +213,7 @@ export default {
     stages: [
       {
         what: 'Gitarrenkonzert des Ehemaligenensembles des Mandolinenorchesters der Soongsil-Universität',
-        where: 'Valtzer Fantastico, Santa Claus March',
+        where: "Granada, L'encouragement, Valtzer Fantastico, Santa Claus March",
         city: 'Seoul',
       },
       {

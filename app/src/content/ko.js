@@ -214,7 +214,7 @@ export default {
     stages: [
       {
         what: '숭실대학교 만돌린오케스트라 동문연주단 기타발표회',
-        where: 'Valtzer Fantastico, Santa Claus March 연주',
+        where: "Granada, L'encouragement, Valtzer Fantastico, Santa Claus March 연주",
         city: '서울',
       },
       { what: 'MOOB 2026 기타발표회 2차 리허설', where: '리허설 실황', city: '서울' },

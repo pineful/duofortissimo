@@ -213,7 +213,7 @@ export default {
     stages: [
       {
         what: '崇実大学マンドリンオーケストラ同窓演奏団 ギター発表会',
-        where: 'Valtzer Fantastico、Santa Claus March を演奏',
+        where: "Granada、L'encouragement、Valtzer Fantastico、Santa Claus March を演奏",
         city: 'ソウル',
       },
       {

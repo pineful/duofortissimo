@@ -213,7 +213,7 @@ export default {
     stages: [
       {
         what: 'Soongsil mandolin alumni ensemble, guitar recital',
-        where: 'Valtzer Fantastico, Santa Claus March',
+        where: "Granada, L'encouragement, Valtzer Fantastico, Santa Claus March",
         city: 'Seoul',
       },
       {

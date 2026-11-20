@@ -54,6 +54,8 @@ export const stageDates = ['2026.10.10', '2026.09.12', '2026.09.02', '2026.09.01
 // (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @ssumo-ob)
 // 두 번째 영상은 2026/10/10 기타 발표회 전체 실황(rASIXVtzvPo)이고,
 // 설명란 타임스탬프의 41:46(L'Encouragement, Op. 34 · 이철규·서민석)부터 재생되도록 start를 두었습니다.
+// 41:46 장면의 썸네일(yt-ens-lenc-rASIXVtzvPo-4146.jpg)은 그 영상 41:46 무렵(2516~2529초) 프레임을
+// 유튜브 플레이어에서 1080p로 받아 1280x720으로 잘라 저장한 것입니다. 화면에 깔린 자막·조작 막대는 없습니다.
 // (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @ssumo-ob)
 export const ensembles = [
   {
@@ -62,7 +64,7 @@ export const ensembles = [
     handle: '@ssumo-ob',
     videos: [
       { id: 'hySoMWFKzkg', thumb: '/assets/yt-ens-hySoMWFKzkg.jpg' },
-      { id: 'rASIXVtzvPo', start: 2506, thumb: '/assets/yt-ens-lenc-rASIXVtzvPo.jpg' },
+      { id: 'rASIXVtzvPo', start: 2506, thumb: '/assets/yt-ens-lenc-rASIXVtzvPo-4146.jpg' },
     ],
   },
 ]

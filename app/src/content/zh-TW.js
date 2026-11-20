@@ -211,7 +211,7 @@ export default {
     stages: [
       {
         what: '崇實大學曼陀林管弦樂團校友演奏團 吉他演奏會',
-        where: '演奏 Valtzer Fantastico、Santa Claus March',
+        where: "演奏 Granada、L'encouragement、Valtzer Fantastico、Santa Claus March",
         city: '首爾',
       },
       {
