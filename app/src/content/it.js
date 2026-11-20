@@ -94,6 +94,9 @@ export default {
         photoAlt: 'Lee Chulkyu alla chitarra classica sul palco',
         facts: [
           ['Affiliazione', 'Capo sezione chitarre dell’Ensemble degli ex allievi dell’Orchestra di Mandolini dell’Università Soongsil'],
+          ['Concerti annuali', '2024 · 2025 · 2026'],
+          ['Recital di chitarra', 'Recital organizzato dalla sezione chitarre (2026)'],
+          ['Strumenti', 'Chitarra classica'],
         ],
         note: null,
       },
@@ -159,12 +162,20 @@ export default {
           ['Ruoli', 'Park Minsoon spalla · Lee Chulkyu sezione chitarre'],
           ['Video', 'Concerti e diario delle prove'],
         ],
-        video: {
-          title: 'Suite "Für Wolfgang" d-moll',
-          sub: 'L. Mozart',
-          place: 'Concerto annuale 2026',
-          length: '8 min 32 s',
-        },
+        videos: [
+          {
+            tag: 'Concerto annuale 2026',
+            title: 'Suite "Für Wolfgang" d-moll',
+            sub: 'L. Mozart',
+            meta: '8 min 32 s',
+          },
+          {
+            tag: 'Recital di chitarra 2026',
+            title: "L'encouragement, Op. 34",
+            sub: 'F. Sor',
+            meta: 'da 41:46',
+          },
+        ],
       },
     ],
   },

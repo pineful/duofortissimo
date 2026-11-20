@@ -52,11 +52,17 @@ export const stageDates = ['2026.10.10', '2026.09.12', '2026.09.02', '2026.09.01
 
 // 박민순이 함께 서는 단체. 채널 주소와 대표 영상은 실제 유튜브에서 확인한 것입니다.
 // (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @ssumo-ob)
+// 두 번째 영상은 2026/10/10 기타 발표회 전체 실황(rASIXVtzvPo)이고,
+// 설명란 타임스탬프의 41:46(L'Encouragement, Op. 34 · 이철규·서민석)부터 재생되도록 start를 두었습니다.
+// (2026-11-20 확인 · oEmbed 200 · 유튜브 채널 @ssumo-ob)
 export const ensembles = [
   {
     key: 'ssumo',
     channel: 'https://www.youtube.com/@ssumo-ob',
     handle: '@ssumo-ob',
-    video: { id: 'hySoMWFKzkg', thumb: '/assets/yt-ens-hySoMWFKzkg.jpg' },
+    videos: [
+      { id: 'hySoMWFKzkg', thumb: '/assets/yt-ens-hySoMWFKzkg.jpg' },
+      { id: 'rASIXVtzvPo', start: 2506, thumb: '/assets/yt-ens-lenc-rASIXVtzvPo.jpg' },
+    ],
   },
 ]

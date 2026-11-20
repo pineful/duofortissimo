@@ -983,6 +983,10 @@ blockquote {
 .ens-plate {
   margin: 0;
 }
+.ens-plates {
+  display: grid;
+  gap: clamp(18px, 2.2vw, 28px);
+}
 .ens-frame {
   position: relative;
   aspect-ratio: 16 / 9;
