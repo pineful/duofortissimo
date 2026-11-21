@@ -113,14 +113,14 @@ export default {
         title: 'Valtzer Fantastico',
         sub: '幻想圆舞曲',
         composer: 'E. Marucelli',
-        length: '6 分 27 秒',
+        length: '6 分 19 秒',
         place: '崇实大学曼陀铃校友演奏团 吉他演奏会',
       },
       {
         title: 'Santa Claus March',
         sub: '圣诞老人进行曲',
         composer: 'F. Vokoun',
-        length: '2 分 27 秒',
+        length: '2 分 35 秒',
         place: '同一场演奏会',
       },
       {

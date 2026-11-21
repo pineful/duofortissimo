@@ -114,14 +114,14 @@ export default {
         title: 'Valtzer Fantastico',
         sub: 'Fantastischer Walzer',
         composer: 'E. Marucelli',
-        length: '6 Min. 27 Sek.',
+        length: '6 Min. 19 Sek.',
         place: 'Gitarrenkonzert des Ehemaligenensembles des Mandolinenorchesters der Soongsil-Universität',
       },
       {
         title: 'Santa Claus March',
         sub: 'Weihnachtsmann-Marsch',
         composer: 'F. Vokoun',
-        length: '2 Min. 27 Sek.',
+        length: '2 Min. 35 Sek.',
         place: 'Dasselbe Konzert',
       },
       {

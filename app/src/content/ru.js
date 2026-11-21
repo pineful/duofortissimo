@@ -114,14 +114,14 @@ export default {
         title: 'Valtzer Fantastico',
         sub: 'Фантастический вальс',
         composer: 'E. Marucelli',
-        length: '6 мин 27 с',
+        length: '6 мин 19 с',
         place: 'Гитарный вечер Ансамбля выпускников оркестра Сунсиль',
       },
       {
         title: 'Santa Claus March',
         sub: 'Марш Санта-Клауса',
         composer: 'F. Vokoun',
-        length: '2 мин 27 с',
+        length: '2 мин 35 с',
         place: 'Тот же вечер',
       },
       {

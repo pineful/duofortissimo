@@ -114,14 +114,14 @@ export default {
         title: 'Valtzer Fantastico',
         sub: 'Fantastic Waltz',
         composer: 'E. Marucelli',
-        length: '6 min 27 s',
+        length: '6 min 19 s',
         place: 'Soongsil mandolin alumni ensemble, guitar recital',
       },
       {
         title: 'Santa Claus March',
         sub: '',
         composer: 'F. Vokoun',
-        length: '2 min 27 s',
+        length: '2 min 35 s',
         place: 'The same recital',
       },
       {

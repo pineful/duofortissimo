@@ -115,14 +115,14 @@ export default {
         title: 'Valtzer Fantastico',
         sub: '환상적인 왈츠',
         composer: 'E. Marucelli',
-        length: '6분 27초',
+        length: '6분 19초',
         place: '숭실대학교 만돌린오케스트라 동문연주단 기타발표회',
       },
       {
         title: 'Santa Claus March',
         sub: '산타클로스 행진곡',
         composer: 'F. Vokoun',
-        length: '2분 27초',
+        length: '2분 35초',
         place: '같은 발표회',
       },
       {

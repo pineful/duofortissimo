@@ -114,14 +114,14 @@ export default {
         title: 'Valtzer Fantastico',
         sub: '幻想のワルツ',
         composer: 'E. Marucelli',
-        length: '6分27秒',
+        length: '6分19秒',
         place: '崇実大学マンドリン同窓演奏団 ギター発表会',
       },
       {
         title: 'Santa Claus March',
         sub: 'サンタクロース行進曲',
         composer: 'F. Vokoun',
-        length: '2分27秒',
+        length: '2分35秒',
         place: '同じ発表会',
       },
       {
