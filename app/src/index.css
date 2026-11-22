@@ -298,6 +298,54 @@ blockquote {
   text-transform: uppercase;
   color: var(--muted-2);
 }
+
+/* 표지 제목 두 줄 — 움직이려면 인라인 상자가 되어야 한다 */
+.cover h1 .t-line {
+  display: inline-block;
+}
+.cover h1 .t-line--first {
+  color: var(--ink);
+  padding-left: 0;
+}
+
+/* 표지의 두 줄 — 만돌린의 잦은 떨림(금색)과 클래식기타의 긴 여운(네이비) */
+.duo-trace {
+  width: min(100%, 420px);
+  margin-top: 20px;
+}
+.duo-trace svg {
+  display: block;
+  width: 100%;
+  height: 44px;
+  overflow: visible;
+}
+.duo-trace path {
+  fill: none;
+  stroke-width: 1.15;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.duo-trace .t-mand {
+  stroke: #b08a45;
+  opacity: 0.92;
+}
+.duo-trace .t-guit {
+  stroke: #142033;
+  opacity: 0.34;
+}
+
+/* 데스크톱: 서명 아래 빈 여백에 절대 배치 — 사진·목차가 1px도 밀리지 않는다 */
+@media (min-width: 1021px) {
+  .duo-trace {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: min(100%, 420px);
+    margin-top: 0;
+  }
+}
+
 .cover-plate {
   position: relative;
   z-index: 1;
@@ -1508,6 +1556,9 @@ blockquote {
 }
 
 @media (max-width: 820px) {
+  .duo-trace svg {
+    height: 52px;
+  }
   .profile {
     grid-template-columns: minmax(0, 1fr);
   }
