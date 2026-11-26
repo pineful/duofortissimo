@@ -3,7 +3,8 @@
 export const site = {
   name: 'Duo Fortissimo',
   email: 'pineful@gmail.com',
-  youtube: 'https://www.youtube.com/@MinSoonPark',
+  // 대표 채널은 듀오 포르티시모 공식 채널입니다. (2026-11-26 교체 · 이전 @MinSoonPark)
+  youtube: 'https://www.youtube.com/@duofortissimo',
   domain: 'duofortissimo.kr',
 }
 
