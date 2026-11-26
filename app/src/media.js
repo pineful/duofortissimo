@@ -47,16 +47,17 @@ export const photos = {
 // 썸네일은 그 영상의 유튜브 최대 해상도(1280x720)를 받아 저장한 것입니다.
 // 이전 도판 III(6RDwFnw-o40)은 연습실에서 찍은 MOOB 2026 기타발표회 2차 리허설 영상(2026.09.12)이어서,
 // 야외 버스킹으로 잘못 소개되고 있어 바로잡았습니다.
-// 도판 I·II는 2026년 10월 10일 기타발표회 실황을 이철규 님이 자기 채널(@CKLee-hz7dk)에 올린 영상입니다.
-// (2026-11-22 확인 · oEmbed 200 · 제목 'Valtzer Fantastico (E. Marucelli) 환상적인 왈츠 2026.10.10 Duo Fortissimo'·
-// 'Santa Claus March (F. Vokoun) 산타클로스 행진곡 2026.10.10 Duo Fortissimo' · 재생 시간 6:19·2:35 · 최고 화질 1080p)
-// 두 편 모두 1080p(FHD)로 올라와 있어 썸네일도 maxresdefault(1280x720)를 그대로 받아 저장했습니다.
+// 도판 I·II는 2026년 10월 10일 기타발표회 실황을 듀오 포르티시모 공식 채널(@duofortissimo)에 올린 영상입니다.
+// (2026-11-26 확인 · 제목 'Valtzer Fantastico (E. Marucelli) — Duo Fortissimo | 2026.10.10 성음아트센터'·
+// 'Santa Claus March (F. Vokoun) — Duo Fortissimo | 2026.10.10 성음아트센터' · 재생 시간 6:20·2:35 · 고화질(1080p) 처리 완료)
+// 두 편 모두 1080p(FHD) 원본이라 썸네일도 maxresdefault(1280x720)를 그대로 받아 저장했습니다.
 // 위아래·좌우에 검은 여백은 없습니다.
-// 이전 도판 I·II는 같은 채널의 480p 영상(oG-47j7irzw·rKK6iLyauWE)이었고, 그 앞에는 박민순 채널의 같은 날
-// 연주 영상(slL9iu_OWS8·b62zBLBz8x0)이었습니다. 지금 것은 1080p로 다시 올린 영상입니다.
+// 이전 도판 I·II는 이철규 님 개인 채널(@CKLee-hz7dk)의 같은 연주 영상(sE0KbqqtYPQ·Ouyt6KZ_Zlo, 2026-11-22 적용)이었고,
+// 그 앞에는 같은 채널의 480p 영상(oG-47j7irzw·rKK6iLyauWE), 그 앞에는 박민순 채널의 같은 날
+// 연주 영상(slL9iu_OWS8·b62zBLBz8x0)이었습니다. 지금 것은 공식 채널에 1080p로 올린 영상입니다.
 export const videos = [
-  { id: 'sE0KbqqtYPQ', no: 'I', thumb: '/assets/yt-sE0KbqqtYPQ.jpg', date: '2026.10.10' },
-  { id: 'Ouyt6KZ_Zlo', no: 'II', thumb: '/assets/yt-Ouyt6KZ_Zlo.jpg', date: '2026.10.10' },
+  { id: '6KDGaBLX55Y', no: 'I', thumb: '/assets/yt-6KDGaBLX55Y.jpg', date: '2026.10.10' },
+  { id: '42I6Bqqb0_0', no: 'II', thumb: '/assets/yt-42I6Bqqb0_0.jpg', date: '2026.10.10' },
   { id: 'xnnB6MzRUFA', no: 'III', thumb: '/assets/yt-xnnB6MzRUFA.jpg', date: '2026.09.01' },
 ]
 
